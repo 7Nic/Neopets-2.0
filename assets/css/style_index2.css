@@ -1,0 +1,142 @@
+@import url(fontawesome-all.min.css);
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+
+body {
+	margin: 0px;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;	
+}
+
+/*Navbar*/
+nav {
+	background-color: #377973;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: #FFF;
+	display: flex;
+}
+
+nav #title {
+	margin-left: 20px;
+}
+
+nav a {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	padding: 6px 12px;
+}
+
+nav ul .active a {
+	background-color: #6FB98F;
+	border-radius: 10px;
+}
+
+nav a:hover {
+	background-color: #6FB98F;
+	border-radius: 10px;
+}
+
+nav ul {
+	margin-left: 50px;
+}
+
+nav li {
+	display: inline;
+}
+
+/*Popular categories*/
+.items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pics img {
+	width: auto;
+	height: 200px;
+	padding: 20px;
+}
+
+.pics {
+	display: flex;
+}
+
+.pics .blocks {
+	align-items: center;
+	margin-left: 85px;	
+}
+
+.pics .blocks:hover {
+	background-color: #fff7c7;
+	transition: background-color 750ms ease;
+	border-radius: 15px;
+}
+
+.pics .blocks p {
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	color: #7d7d7d;
+	margin-top: -8px;
+}
+
+/*Banner*/
+#main .main {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#main .banner .title {
+	font-weight: bold;
+	color: #FFFFFF;
+	align-self: center;
+	font-size: 50px;
+}
+
+.banner {
+	margin-top: 25px;
+	background-color: #2c7873;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.banner .bannerText {
+	margin-left: 3%;
+	color: #FFFFFF;
+	align-self: center;
+}
+
+.bannerText .description {
+	font-weight: 500;
+}
+
+.bannerText .btn {
+	background-color: #FFFFFF;
+	border: none;
+  	color: #000;
+  	font-weight: bold;
+ 	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	border-radius: 20px;
+}
+
+.bannerText .btn:hover {
+	background-color: #000;
+  	color: #FFF;
+}
+
+.animalBannerImg {
+	height: 340px;
+	width: auto;
+	margin-right: 4%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}

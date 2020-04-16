@@ -2,13 +2,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-nav {
-    background-color: #004445;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    color: #FFF;
-    display: flex;
-}
 body {
     margin: 0px;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -17,8 +10,19 @@ body {
 a {
     text-decoration: none;
 }
-nav #title {
-    margin-left: 20px;
+
+nav {
+    background-color: #004445;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #FFF;
+    display: flex;
+}
+
+nav img {
+    height: 100px;
+    width: auto;
+    margin-left: 2%;
 }
 
 nav a {
@@ -39,12 +43,14 @@ nav a:hover {
 }
 
 nav ul {
-    margin-left: 50px;
+    margin-left: 70px;
+    margin-top: 35px;
 }
 
 nav li {
     display: inline;
 }
+
 /* Footer */
 footer {
     background-color: #004445;
@@ -74,9 +80,23 @@ footer .icons li {
 footer .icons li a {
     text-decoration: none;
 }
-footer .btn{
+footer .btn {
     background-color: #6FB98F;
+    color: #FFF;
     border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+footer .btn:hover {
+    background-color: #EBB32B;
+    color: #000;
+    transition: background-color 200ms ease;
 }
 
 .icon.brands {

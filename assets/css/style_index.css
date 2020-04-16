@@ -12,7 +12,7 @@ a {
 
 /*Navbar*/
 nav {
-	background-color: #377973;
+	background-color: #004445;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	color: #FFF;
@@ -175,6 +175,8 @@ nav li {
 
 /* Footer */
 footer {
+	background-color: #004445;
+	color: white;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -199,6 +201,10 @@ footer .icons li {
 
 footer .icons li a {
 	text-decoration: none;
+}
+footer .btn{
+	background-color: #6FB98F;
+	border: none;
 }
 
 .icon.brands:before {

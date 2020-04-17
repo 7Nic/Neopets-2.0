@@ -1,136 +1,131 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Pet Details</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/pet_details.css" />
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Header -->
-					<header id="header">
-						<h1>NeopeTwo</h1>
-						<p>Your pets page</p>
-					</header>
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#ActionPage" class="active">Action Page</a></li>
-							<li><a href="#Calendar">Calendar</a></li>
-							<li><a href="#DetailScreen">Your Animal</a></li>
-						</ul>
-					</nav>
-				<!-- Introduction -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Details</title>
+    <link rel="stylesheet" href="assets/css/nav_footer.css" />
+    <link rel="stylesheet" href="assets/css/style_petdetails.css" />
+
+</head>
+<body class="container">
+        <!-- Nav -->
+        <nav>
+            <img src="./img/logo2.png">
+            <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="user_action.html">Action Page</a></li>
+                <li><a href="#Calendar">Calendar</a></li>
+                <li class="active"><a href="pet_details.html">Your Animal</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content -->
+        <div id="wrapper">
+            <div id="main">
+                <!-- Pet selection -->
+                <div class="spotlight">
+                    <div class="content">
+                            <header class="major">
+                                <h2>Poogle</h2>
+                            </header>
+                            <p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+                                adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
+                                Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                            <form method="post" action="#">
+                                    <select name="demo-category" id="demo-category">
+                                        <option value="">- Select Another Pet -</option>
+                                        <option value="1">Poogle</option>
+                                        <option value="1">Lupe</option>
+                                    </select>
+                            </form>
+                        </div>
+                        <span class="image"><img src="img/poogle.png" alt="" /></span>
+                    </div>
+                    <hr/>
+                <!-- Table prices -->
+                <div class="spotlight" id="table-wrapper">
+                    <div class="content">
+                        <header class="major">
+                        <h1>Prices and services</h1>
+                        </header>
 
 
-				<!-- Main -->
-					<div id="main">
+                            <table id="price-table">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Item One</td>
+                                    <td>Complete shower.</td>
+                                    <td>29.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Item Two</td>
+                                    <td>Nail trimming.</td>
+                                    <td>19.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Item Three</td>
+                                    <td>Bone toy.</td>
+                                    <td>14.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Item Four</td>
+                                    <td>Collar.</td>
+                                    <td>9.99</td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="2">Your total is: </td>
+                                    <td><b>75.00</b></td>
+                                </tr>
+                                </tfoot>
+                            </table>
 
-						<!-- Content -->
-						<section id="intro" class="main">
-							<div class="spotlight">
-								<div class="content">
-									<header class="major">
-										<h2>Poogle</h2>
-									</header>
-									<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-									<form method="post" action="#">
-										<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Select Another Pet -</option>
-											<option value="1">Poogle</option>
-											<option value="1">Lupe</option>
-										</select>
-								</div>
-									</form>
-								</div>
-								<span class="image"><img src="img/poogle.png" alt="" /></span>
-							</div>
-						</section>
-						<section id="content" class="main">
-								<h3>Prices and services</h3>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-									</thead>
-									<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Complete shower.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Nail trimming.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td>Bone toy.</td>
-										<td>14.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Collar.</td>
-										<td>9.99</td>
-									</tr>
-									</tbody>
-									<tfoot>
-									<tr>
-										<td colspan="2">Your total is: </td>
-										<td><b>75.00</b></td>
-									</tr>
-									</tfoot>
-								</table>
-							</div>
-
-						</section>
-
-						<section>
-
-						</section>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2><b>Neopetwo</b></h2>
-							<p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to care and love your best friend in the world!</p>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Visit us!</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>2544 São Carlos Avenue &bull; São Carlos, SP</dd>
-								<dt>Phone</dt>
-								<dd>(16) 0000-0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">sac-neopetwo@neopetwo.com</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								</ul>
-						</section>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-	</body>
+
+
+        <!-- Footer -->
+        <footer>
+            <section>
+                <h2><b>Neopetwo</b></h2>
+                <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to care and love your best friend in the world!</p>
+                <a href="#">
+                    <button class="btn">Learn more!</button>
+                </a>
+
+            </section>
+            <section>
+                <h2>Visit us!</h2>
+                <div class="line">
+                    <p><h3>Address</h3>  2544 São Carlos Avenue &bull; São Carlos, SP</p>
+                </div>
+                <div class="line">
+                    <p><h3>Phone</h3>  (16) 0000-0000</p>
+                </div>
+                <div class="line">
+                    <p><h3>Email</h3>  sac-neopetwo@neopetwo.com</p>
+                </div>
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter alt"><i class="icon-repeat"></i><span class="label"></span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label"></span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
+                </ul>
+
+            </section>
+        </footer>
+
+</body>
+
 </html>

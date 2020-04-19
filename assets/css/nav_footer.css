@@ -30,6 +30,7 @@ nav a {
     font-weight: bold;
     color: #FFF;
     padding: 6px 12px;
+    display: inline-block;
 }
 
 nav ul .active a {
@@ -58,7 +59,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5em 5em 3em 5em;
+    padding: 3em 3em 3em 3em;
 }
 
 footer section {
@@ -71,10 +72,12 @@ footer .line h3 {
 
 footer .icons {
     margin-top: 45px;
+
 }
 
 footer .icons li {
     display: inline;
+    border-style: none;
 }
 
 footer .icons li a {

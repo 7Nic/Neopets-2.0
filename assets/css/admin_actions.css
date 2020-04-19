@@ -1,0 +1,40 @@
+/* Oculta formulários até clicar no botão*/
+.form-popup {
+     display: none;
+ }
+
+.adm_registration{
+    text-align: center;
+    background-color: #6fb98f;
+    padding: 1em 1em 1em 1em;
+}
+
+
+/*Form style*/
+.form-popup form {
+    overflow: hidden;
+}
+
+.form-popup label {
+    float: left;
+    width: 100px;
+
+}
+
+.form-popup input {
+    float: left;
+    width: calc(100% - 200px);
+}
+
+.form-popup button {
+    margin-top: 10px;
+    float: bottom;
+    width: calc(100% - 500px);
+}
+
+.adm_registration{
+    color: #004445;
+}
+.form-container{
+    color: #004445;
+}

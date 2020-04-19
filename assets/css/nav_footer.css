@@ -114,3 +114,60 @@ footer .btn:hover {
     height: 300px;
 }
 
+/*Admin nav-bar style */
+.adm_nav{
+    background-color: #004445;
+    padding: 1px;
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+
+}
+.adm_nav h1{
+    color: white;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    width: 100%;
+    font-size: 15px;
+    margin-left: 10px;
+
+}
+
+.adm_nav a {
+    text-decoration: none;
+}
+
+.adm_nav a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 0.3em;
+    margin: 1em 1em 1em 1em;
+
+}
+
+.adm_nav ul .active a {
+    background-color: #6FB98F;
+    border-radius: 10px;
+}
+.adm_nav a:hover {
+    background-color: #6FB98F;
+    border-radius: 10px;
+}
+
+.adm_nav  li{
+    display: inline-block;
+}
+.adm_registration h1{
+    text-align: center;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+/* Linha horizontal amarela */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0em 0;
+    padding: 0;
+    border-color: #ffd800;
+}

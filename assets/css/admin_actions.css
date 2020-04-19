@@ -1,0 +1,63 @@
+/* Oculta formulários até clicar no botão*/
+.adm_registration{
+    text-align: center;
+    background-color: #6fb98f;
+    padding: 1em 1em 1em 1em;
+}
+
+/*Form style*/
+.form-popup {
+    display: none;
+}
+
+.form-popup form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-popup label{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-popup input {
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+    width: calc(100% - 200px);
+    float: right;
+
+}
+
+.form-popup .btn {
+    background: lightgrey;
+    padding: 0.7em;
+    margin-bottom: 10px;
+    border: 0;
+    width: calc(100% - 500px);
+}
+
+.adm_registration{
+    color: #004445;
+}
+.form-container{
+    color: #004445;
+    height: 400px;
+}
+
+.form-popup .btn:hover{
+    background: #EBB32B;
+}
+input {
+    padding: 0.6em;
+    margin-bottom: 0.5rem;
+}
+input:focus {
+    outline: 3px solid gold;
+}
+.form-popup h1{
+
+}

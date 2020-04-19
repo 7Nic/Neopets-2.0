@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin actions</title>
+    <link rel="stylesheet" href="assets/css/nav_footer.css" />
+    <link rel="stylesheet" href="assets/css/admin_actions.css" />
+</head>
+<body>
+<!--Nav -->
+<nav>
+    <img src="./img/logo2.png">
+    <ul>
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li class="active"><a href="user_action.html">Action Page</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="pet_details.html">Your Animal</a></li>
+        <li><a href="login.html"><i class="fas fa-lock"></i>  Login</a></li>
+    </ul>
+</nav>
+
+<!-- Main content-->
+<div class="content-wrapper">
+    <!-- Adm indicator nav -->
+    <div class="adm_nav">
+        <hr>
+        <h1>Your account have admin privileges</h1>
+        <hr>
+        <ul>
+            <li class="active"><a href="./adm_actions.html">Register</a></li>
+            <li><a href="#manage_services.html">Services</a></li>
+            <li><a href="#manage_inventory.html">Inventory</a></li>
+        </ul>
+    </div>
+    <!-- ADM Registration page-->
+    <!-- Buttons -->
+    <div class="adm_registration">
+        <h1>Registration</h1>
+        <button class="open-button" onclick="openForm(1)">Administrator</button>
+        <button class="open-button" onclick="openForm(2)">Customer</button>
+        <button class="open-button" onclick="openForm(3)">Products</button>
+        <button class="open-button" onclick="openForm(4)">Services</button>
+
+        <!-- New admin form -->
+        <div class="form-popup" id="admin">
+            <form action="#" class="form-container">
+                <h1>New administrator</h1>
+
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw">Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Create</button>
+                <button type="bu
+                tton" class="btn cancel" onclick="closeForm(1)">Cancel</button>
+            </form>
+        </div>
+        <!-- New customer form -->
+        <div class="form-popup" id="customer">
+            <form action="#" class="form-container">
+                <h1>New customer</h1>
+
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw">Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Create</button>
+                <button type="button" class="btn cancel" onclick="closeForm(2)">Cancel</button>
+            </form>
+        </div>
+
+        <!-- New product form -->
+        <div class="form-popup" id="product">
+            <form action="#" class="form-container">
+                <h1>New product</h1>
+
+                <label for="email">Name</label>
+                <input type="text" placeholder="Product Name" name="email" required>
+
+                <label for="psw">Quantity</label>
+                <input type="password" placeholder="Quantity" name="psw" required>
+
+                <label for="email">Category</label>
+                <input type="text" placeholder="Product Category" name="category" required>
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm(3)">Cancel</button>
+            </form>
+        </div>
+
+        <!-- New services form -->
+        <div class="form-popup" id="services">
+            <form action="#" class="form-container">
+                <h1>New service</h1>
+
+                <label for="email">Name</label>
+                <input type="text" placeholder="Service name" name="service_name" required>
+
+                <label for="psw">Category</label>
+                <input type="password" placeholder="Service Category" name="psw" required>
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm(4)">Cancel</button>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <section>
+        <h2><b>Neopetwo</b></h2>
+        <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to care and love your best friend in the world!</p>
+        <a href="#">
+            <button class="btn">Learn more!</button>
+        </a>
+
+    </section>
+    <section>
+        <h2>Visit us!</h2>
+        <div class="line">
+            <p><h3>Address</h3>  2544 São Carlos Avenue &bull; São Carlos, SP</p>
+        </div>
+        <div class="line">
+            <p><h3>Phone</h3>  (16) 0000-0000</p>
+        </div>
+        <div class="line">
+            <p><h3>Email</h3>  sac-neopetwo@neopetwo.com</p>
+        </div>
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter alt"><i class="icon-repeat"></i><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
+        </ul>
+
+    </section>
+</footer>
+<script src="assets/js/admin_actions.js"></script>
+</body>
+</html>

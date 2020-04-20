@@ -5,6 +5,7 @@
     <title>Admin actions</title>
     <link rel="stylesheet" href="assets/css/nav_footer.css" />
     <link rel="stylesheet" href="assets/css/style_adm.css" />
+    <link rel="stylesheet" href="assets/css/style_admInv.css" />
 </head>
 <body>
 <!--Nav -->
@@ -27,34 +28,37 @@
         <h1>Your account has admin privileges</h1>
         <hr>
         <ul>
-            <li class="active"><a href="./adm_actions.html">Register</a></li>
-            <li><a href="#manage_services.html">Services</a></li>
-            <li><a href="#manage_inventory.html">Inventory</a></li>
+            <li ><a href="./adm_actions.html">Register</a></li>
+            <li ><a href="#manage_services.html">Services</a></li>
+            <li class="active"><a href="./adm_inventory.html">Inventory</a></li>
         </ul>
     </div>
     <!-- ADM Registration page-->
     <!-- Buttons -->
     <div class="adm_registration">
-        <h1>Registration</h1>
-        <button class="open-button" onclick="openForm(1)">Administrator</button>
-        <button class="open-button" onclick="openForm(2)">Customer</button>
-        <button class="open-button" onclick="openForm(3)">Products</button>
-        <button class="open-button" onclick="openForm(4)">Services</button>
+        <h1>Inventory Management Screen</h1>
+        <button class="open-button" onclick="openForm(1)">Add</button>
+        <button class="open-button" onclick="openForm(2)">Update</button>
+        <button class="open-button" onclick="openForm(3)">Delete</button>
+        <button class="open-button" onclick="openForm(4)">Consult</button>
 
         <!-- New admin form -->
         <div class="form-popup" id="admin">
-            <form action="#" class="form-container">
-                <h1>New administrator</h1>
-
-                <label for="email">Email</label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw">Password</label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit" class="btn">Create</button>
-                <button type="bu
-                tton" class="btn cancel" onclick="closeForm(1)">Cancel</button>
+            <form action="#" class="product-list-container">
+                <h1>Add product</h1>
+                <p>Want to register a new product instead? Check out the <a href="adm_actions.html">Register screen!</a></p>
+                <form id="product_listing">
+                    <select name="product_listing">
+                        <option value="">- Select a product -</option>
+                        <option value="1">Poogle</option>
+                        <option value="1">Lupe</option>
+                    </select>
+                </form>
+                <label id="product_quantity">
+                    <input type="number" placeholder="Quantity" name="quantity" required>
+                </label>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm(1)">Cancel</button>
             </form>
         </div>
         <!-- New customer form -->

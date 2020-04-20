@@ -1,0 +1,12 @@
+.adm_registration select{
+    width: 200px;
+    float: left;
+}
+#product_quantity input{
+    width: 40px;
+    float: right;
+    margin-left: 300px;
+
+}
+.product-list-container{
+}

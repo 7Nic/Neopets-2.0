@@ -90,7 +90,7 @@ a {
 .bannerText .btn {
   	border: none;
   	font-weight: bold;
- 	padding: 15px 32px;
+ 		padding: 15px 32px;
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
@@ -104,10 +104,9 @@ a {
 }
 
 .bannerText .btn1:hover {
-	/*background-color: #000;*/
 	background-color: #6FB98F;
-  	color: #FFF;
-  	transition: background-color 200ms ease;
+	color: #FFF;
+	transition: background-color 200ms ease;
 }
 
 .animalBannerImg {

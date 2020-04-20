@@ -1,0 +1,129 @@
+@import url(fontawesome-all.min.css);
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+
+body {
+	margin: 0px;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;	
+}
+
+/*Navbar*/
+/*Another file*/
+
+/*Footer*/
+/*Another file*/
+
+.cartArea {
+	display: flex;
+	flex-direction: row;
+}
+
+.productsArea {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+}
+
+.cartArea h1 {
+	align-self: center;
+}
+
+.cartHeader {
+	display: flex;
+	flex-direction: row;
+	margin-left: 7%;
+}
+
+.cartHeader p {
+	width: 33%;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.product{
+	margin-left: 7%;
+	margin-bottom: 90px;
+	display: flex;
+	flex-direction: row;
+}
+
+.product div {
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.product img {
+	width: 140px;
+	height: auto;
+}
+
+.productTitle {
+	font-size: 18px;
+}
+
+.productQuantity {
+	width: 33%;
+	font-size: 20px;
+}
+
+.fa-minus {
+	color: #7d7d7d;
+	font-size: 15px;
+	margin-right: 8px;
+}
+
+.fa-plus {
+	color: #7d7d7d;
+	font-size: 15px;
+	margin-left: 8px;
+}
+
+.productPrice {
+	width: 33%;
+}
+
+.paymentArea {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+}
+
+.cartTotal {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	font-size: 22px;
+}
+
+#cartTotal {
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+.paymentArea .btn {
+	border: none;
+	font-weight: bold;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 20px;
+	background-color: #004445;
+	color: #FFF;
+	width: 70%;
+	align-self: center;
+}
+
+.paymentArea .btn:hover {
+	background-color: #6FB98F;
+	color: #000;
+	transition: background-color 200ms ease;
+}

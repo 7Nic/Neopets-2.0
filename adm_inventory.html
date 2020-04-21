@@ -28,9 +28,9 @@
         <h1>Your account has admin privileges</h1>
         <hr>
         <ul>
-            <li ><a href="./adm_actions.html">Register</a></li>
-            <li ><a href="#manage_services.html">Services</a></li>
-            <li class="active"><a href="./adm_inventory.html">Inventory</a></li>
+            <li ><a href="adm_actions.html">Register</a></li>
+            <li ><a href="adm_services.html">Services</a></li>
+            <li class="active"><a href="adm_inventory.html">Inventory</a></li>
         </ul>
     </div>
     <!-- ADM Registration page-->
@@ -43,34 +43,52 @@
         <button class="open-button" onclick="openForm(4)">Consult</button>
 
         <!-- New admin form -->
-        <div class="form-popup" id="admin">
+        <div class="form-popup" id="add_product">
             <form action="#" class="product-list-container">
-                <h1>Add product</h1>
+                <h1>Add to an existing product</h1>
                 <p>Want to register a new product instead? Check out the <a href="adm_actions.html">Register screen!</a></p>
                 <form id="product_listing">
                     <select name="product_listing">
                         <option value="">- Select a product -</option>
-                        <option value="1">Poogle</option>
-                        <option value="1">Lupe</option>
                     </select>
                 </form>
-                <label id="product_quantity">
-                    <input type="number" placeholder="Quantity" name="quantity" required>
-                </label>
+                <div id="qntty">
+                <label id="product_quantity">Quantity</label>
+                <input type="number" placeholder="" name="quantity" required>
+                </div>
                 <button type="submit" class="btn">Submit</button>
                 <button type="button" class="btn cancel" onclick="closeForm(1)">Cancel</button>
             </form>
         </div>
         <!-- New customer form -->
-        <div class="form-popup" id="customer">
-            <form action="#" class="form-container">
-                <h1>New customer</h1>
+        <div class="form-popup" id="update_product">
 
-                <label for="email">Email</label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <h1>Update an existing product</h1>
+                <form id="product_listing">
+                    <select name="product_listing">
+                        <option value="">- Select a product -</option>
+                    </select>
+                </form>
 
-                <label for="psw">Password</label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <form action="#" class="form-container">
+
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter name" name="name" required>
+
+                <label for="id">Id</label>
+                <input type="text" placeholder="" name="id">
+
+                <label for="picture">Picture:</label>
+                <input type="file" id="picture" name="picture">
+
+                <label for="description">Description</label>
+                <input type="text" placeholder="" name="description" required>
+
+                <label for="price">Price</label>
+                <input type="number" placeholder="$" name="price" required>
+
+                <label for="qnt">Initial quantity in stock</label>
+                <input type="number" placeholder="" name="qnt" required>
 
                 <button type="submit" class="btn">Create</button>
                 <button type="button" class="btn cancel" onclick="closeForm(2)">Cancel</button>
@@ -78,33 +96,31 @@
         </div>
 
         <!-- New product form -->
-        <div class="form-popup" id="product">
+        <div class="form-popup" id="delete_product">
             <form action="#" class="form-container">
-                <h1>New product</h1>
-
-                <label for="email">Name</label>
-                <input type="text" placeholder="Product Name" name="email" required>
-
-                <label for="email">Category</label>
-                <input type="text" placeholder="Product Category" name="category" required>
-
-                <button type="submit" class="btn">Submit</button>
+                <h1>Delete a product</h1>
+                <p>This action cannot be undone</p>
+                <form id="product_listing">
+                    <select name="product_listing">
+                        <option value="">- Select a product -</option>
+                    </select>
+                </form>
+                <button type="submit" class="btn">Delete</button>
                 <button type="button" class="btn cancel" onclick="closeForm(3)">Cancel</button>
             </form>
         </div>
 
         <!-- New services form -->
-        <div class="form-popup" id="services">
+        <div class="form-popup" id="consult_product">
             <form action="#" class="form-container">
-                <h1>New service</h1>
+                <h1>Consult</h1>
 
-                <label for="email">Name</label>
-                <input type="text" placeholder="Service name" name="service_name" required>
+                <form id="product_listing">
+                    <select name="product_listing">
+                        <option value="">- Select a product -</option>
+                    </select>
+                </form>
 
-                <label for="psw">Category</label>
-                <input type="password" placeholder="Service Category" name="psw" required>
-
-                <button type="submit" class="btn">Submit</button>
                 <button type="button" class="btn cancel" onclick="closeForm(4)">Cancel</button>
             </form>
         </div>
@@ -145,6 +161,6 @@
 
     </section>
 </footer>
-<script src="assets/js/admin_actions.js"></script>
+<script src="assets/js/admin_invetory.js"></script>
 </body>
 </html>

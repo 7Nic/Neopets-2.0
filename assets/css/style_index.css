@@ -12,8 +12,8 @@ a {
 
 /*Navbar*/
 /*Another file*/
-
 /*Popular categories*/
+
 .items {
 	display: flex;
 	flex-direction: column;
@@ -139,5 +139,19 @@ a {
   	transition: background-color 200ms ease;
 }
 
+.row {
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.center{
+	justify-content: center ;
+}
+
+.colunm{
+	display: flex;
+	flex-direction: column;
+}
 /*Fotter*/
 /*Another file*/

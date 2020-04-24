@@ -1,0 +1,12 @@
+.adm_registration select{
+    width: 400px;
+    float: left;
+    margin-bottom: 10px;
+}
+#qntty{
+    display: flex;
+    flex-direction: column;
+}
+#qntty input{
+    width: 100px;
+}

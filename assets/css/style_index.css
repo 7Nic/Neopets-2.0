@@ -4,6 +4,8 @@
 *{
 	padding: 0;
 	margin: 0;
+
+	box-sizing: border-box;
 }
 
 /* General */
@@ -47,6 +49,7 @@ a {
 	align-items:  center;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 
@@ -122,12 +125,14 @@ a {
 }
 
 .info-img{
+	align-self: center;
 	height: 340px;
 	width: auto;
 	margin-left: 4%;
 	margin-right: 4%;
 	margin-top: 1%;
 	margin-bottom: 1%;
+	
 }
 
 /* ###################################################################################################################  */

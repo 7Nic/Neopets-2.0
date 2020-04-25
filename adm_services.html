@@ -9,15 +9,20 @@
 </head>
 <body>
 <!--Nav -->
-<nav>
+<nav id = "home-bar">
     <img src="./img/logo2.png">
     <ul>
-        <li><a href="./index.html" class="active">Home</a></li>
-        <li class="active"><a href="user_action.html">Action Page</a></li>
+        <li class="active"><a href="./index.html" class="active">Home</a></li>
+        <li><a href="user_action.html">Action Page</a></li>
         <li><a href="calendar.html">Calendar</a></li>
         <li><a href="pet_details.html">Your Animal</a></li>
-        <li class="login-btn"><a href="login.html"><i class="fas fa-lock"></i>  Login</a></li>
     </ul>
+
+
+    <div id="login-area">
+        <a href="login.html"><i class="fas fa-lock"></i> Login</a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+    </div>	
 </nav>
 
 <!-- Main content-->
@@ -162,10 +167,12 @@
 
 
 <!-- Footer -->
+<!-- Footer -->
 <footer>
     <section>
         <h2><b>Neopetwo</b></h2>
-        <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to care and love your best friend in the world!</p>
+        <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
+            care and love your best friend in the world!</p>
         <a href="#">
             <button class="btn">Learn more!</button>
         </a>
@@ -174,20 +181,25 @@
     <section>
         <h2>Visit us!</h2>
         <div class="line">
-            <p><h3>Address</h3>  2544 São Carlos Avenue &bull; São Carlos, SP</p>
+            <p>
+                <h3>Address</h3> 2544 São Carlos Avenue &bull; São Carlos, SP
+            </p>
         </div>
         <div class="line">
-            <p><h3>Phone</h3>  (16) 0000-0000</p>
+            <p>
+                <h3>Phone</h3> (16) 0000-0000
+            </p>
         </div>
         <div class="line">
-            <p><h3>Email</h3>  sac-neopetwo@neopetwo.com</p>
+            <p>
+                <h3>Email</h3> sac-neopetwo@neopetwo.com
+            </p>
         </div>
         <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter alt"><i class="icon-repeat"></i><span class="label"></span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-twitter alt"><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-facebook alt"><span class="label"></span></a></li>
             <li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
         </ul>
-
     </section>
 </footer>
 <script src="assets/js/admin_actions.js"></script>

@@ -2,30 +2,37 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-body {
+
+*{
+    padding : 0;
+    margin: 0;
+}
+/* body {
     margin: 0px;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 a {
     text-decoration: none;
-}
+} */
 
-nav {
+
+/* ############################################################################################################################3 */
+#home-bar{
     background-color: #004445;
-    padding-top: 1%;
-    padding-bottom: 1%;
     color: #FFF;
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-nav img {
+#home-bar img {
     height: 100px;
     width: auto;
     margin-left: 2%;
 }
 
-nav a {
+#home-bar a {
     font-size: 20px;
     font-weight: bold;
     color: #FFF;
@@ -33,25 +40,34 @@ nav a {
     display: inline-block;
 }
 
-nav ul .active a {
-    background-color: #6FB98F;
-    border-radius: 10px;
-}
-
-nav a:hover {
-    background-color: #6FB98F;
-    border-radius: 10px;
-}
-
-nav ul {
+#home-bar ul{
     margin-left: 70px;
-    margin-top: 35px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    width: 80%;
 }
 
-nav li {
+#home-bar ul .active a {
+    background-color: #6FB98F;
+    border-radius: 10px;
+}
+
+#home-bar li {
     display: inline;
 }
 
+#home-bar a:hover {
+    background-color: #6FB98F;
+    border-radius: 10px;
+}
+
+#login-area{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* #######################################################################################################33 */
 /* Footer */
 footer {
     background-color: #004445;
@@ -62,8 +78,15 @@ footer {
     padding: 3em 3em 3em 3em;
 }
 
+
+
 footer section {
     width: 45%;
+}
+
+footer p{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 footer .line h3 {

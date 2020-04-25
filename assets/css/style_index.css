@@ -1,6 +1,12 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/* General */
 body {
 	margin: 0px;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -10,39 +16,67 @@ a {
 	text-decoration: none;	
 }
 
-/*Navbar*/
-/*Another file*/
-/*Popular categories*/
 
-.items {
+.column{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
-.pics img {
-	width: auto;
-	height: 200px;
-	padding: 20px;
-}
 
-.pics {
+.row{
 	display: flex;
+	flex-direction: row;
+}
+/* ######################################################################################### */
+
+.banner {
+	
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
-.pics .blocks {
+
+
+/* ################################################################################################################ */
+.popular-list{
+	background-color: white;
+}
+
+.popular-list div{
+	justify-content: space-evenly;
+	align-items:  center;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.popular-list h2 {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.popular-list a{
 	align-items: center;
-	margin-left: 85px;	
+	width: 200px;
+	height: auto;
 }
 
-.pics .blocks:hover {
+.popular-list a:hover {
 	background-color: rgba(255, 228, 64, 0.7);
-	/*background-color: #fff7c7;*/
+
 	transition: background-color 500ms ease;
 	border-radius: 15px;
 }
 
-.pics .blocks p {
+.popular-list img {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	width: auto;
+	height: 200px;
+}
+
+.popular-list p{
 	text-align: center;
 	font-size: 25px;
 	font-weight: bold;
@@ -50,66 +84,44 @@ a {
 	margin-top: -8px;
 }
 
-/*Banner*/
-#main .main {
-	padding-left: 0;
-	padding-right: 0;
-}
 
-#main .banner .title {
-	font-weight: bold;
-	color: #FFFFFF;
-	align-self: center;
-	font-size: 50px;
-}
+/* ################################################################################################################## */
 
-.banner {
-	margin-top: 25px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.banner1 {
-	background-color: #EBB32B;
-}
-
-.banner .bannerText {
+.info-description {
 	margin-left: 3%;
 	margin-right: 3%;
 	color: #FFFFFF;
 	align-self: center;
 }
 
-.bannerText .description {
+.info-description h2{
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.info-description p{
 	font-size: 22px;
 	font-weight: 500;
 	margin-bottom: 40px;
 }
 
-.bannerText .btn {
+.info-description .button {
   	border: none;
   	font-weight: bold;
- 		padding: 15px 32px;
+    padding: 15px 32px;
   	text-align: center;
   	text-decoration: none;
-  	display: inline-block;
   	font-size: 16px;
-  	border-radius: 20px;
-}
-
-.bannerText .btn1 {
+	border-radius: 20px;
 	background-color: #FFFFFF;
 	color: #000;
 }
 
-.bannerText .btn1:hover {
-	background-color: #6FB98F;
-	color: #FFF;
-	transition: background-color 200ms ease;
+.info-description button:focus{
+	outline: 0;
 }
 
-.animalBannerImg {
+.info-img{
 	height: 340px;
 	width: auto;
 	margin-left: 4%;
@@ -118,40 +130,32 @@ a {
 	margin-bottom: 1%;
 }
 
-/*=====*/
-.banner2 {
+/* ###################################################################################################################  */
+
+#shop-info {
+	background-color: #EBB32B;
+	display: flex;
+	flex-direction: row;
+}
+
+
+#shop-info .button:hover {
+	background-color: #6FB98F;
+	color: #FFF;
+	transition: background-color 200ms ease;
+}
+
+/* ###################################################################################################################  */
+
+#bird-info {
 	/*background-color: #EBB32B;*/
 	background-color: #2c7873;
+	display: flex;
+	flex-direction: row;
 }
 
-
-/*=====*/
-.bannerText .btn2 {
-	background-color: #FFFFFF;
-  	color: #000;
-}
-
-.bannerText .btn2:hover {
-	/*background-color: #000;*/
-  	/*color: #FFF;*/
+#bird-info .button:hover {
   	background-color: #EBB32B;
     color: #000;
   	transition: background-color 200ms ease;
 }
-
-.row {
-	display: flex;
-	flex-direction: row;
-	
-}
-
-.center{
-	justify-content: center ;
-}
-
-.colunm{
-	display: flex;
-	flex-direction: column;
-}
-/*Fotter*/
-/*Another file*/

@@ -37,7 +37,17 @@ a {
 	padding-bottom: 1em;
 }
 
+.bg-green{
+	background-color: #2c7873;
+}
 
+.bg-yellow{
+	background-color: #EBB32B;
+}
+
+.bg-white{
+	background-color: white;
+}
 
 /* ################################################################################################################ */
 .popular-list{

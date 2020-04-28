@@ -17,6 +17,42 @@ a {
     text-decoration: none;
 }
 
+*{
+	padding: 0;
+	margin: 0;
+
+	box-sizing: border-box;
+}
+
+/* General */
+body {
+	margin: 0px;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;	
+}
+
+
+.column{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+/* ######################################################################################### */
+
+.banner {
+	
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
 
 /* ############################################################################################################################3 */
 #home-bar{
@@ -56,8 +92,6 @@ a {
 #home-bar li {
     display: inline;
 }
-
-
 
 #home-bar li a:hover {
     background-color: #6FB98F;

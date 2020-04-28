@@ -6,4 +6,4 @@
 - As seções do meio da página desse: https://theme538-pets-shop.myshopify.com/
 - As seções do meio da página desse também:https://www.zeedog.com/
 
-- Fotos grátis de cães: https://www.freepngs.com/dog-pngs
+- Fotos grátis de cães :) https://www.freepngs.com/dog-pngs

@@ -1,13 +1,17 @@
 /* Oculta formulários até clicar no botão*/
-.adm_registration{
+.adm_registration {
     text-align: center;
     background-color: #6fb98f;
+    padding: 1em 1em 1em 1em;
+}
+.adm_registration ul{
+    display: inline-flex;
     padding: 1em 1em 1em 1em;
 }
 
 /*Form style*/
 .form-popup {
-    display: none;
+
 }
 
 .form-popup form {
@@ -17,7 +21,7 @@
 }
 
 
-.form-popup label{
+.form-popup label {
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -40,24 +44,24 @@
     width: calc(100% - 500px);
 }
 
-.adm_registration{
+.adm_registration {
     color: #004445;
 }
-.form-container{
+
+.form-container {
     color: #004445;
 
 }
 
-.form-popup .btn:hover{
+.form-popup .btn:hover {
     background: #EBB32B;
 }
+
 input {
     padding: 0.6em;
     margin-bottom: 0.5rem;
 }
+
 input:focus {
     outline: 3px solid gold;
-}
-.form-popup h1{
-
 }

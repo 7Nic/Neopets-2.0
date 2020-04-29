@@ -11,7 +11,7 @@
 
 <body class="container">
     <!-- Nav -->
-    <nav id = "home-bar">
+    <nav id="home-bar">
         <img src="./img/logo2.png">
         <ul>
             <li class="active"><a href="./index.html" class="active">Home</a></li>
@@ -24,19 +24,63 @@
         <div id="login-area">
             <a href="login.html"><i class="fas fa-lock"></i> Login</a>
             <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
-        </div>	
+        </div>
     </nav>
+
 
     <!-- Calendar -->
     <div class="column">
 
-        <div class="banner bg-green" id="input-calendar">
-            <input type="date" name="day-activity" id="day">
+        <div class="banner bg-green row" id="calendar">
+            <h2>Dia X de Agosto</h2>
+            <input type="date"/>
         </div>
 
+        
+        <div  class="banner bg-white" id="activities-list">
 
+            <!-- trocar para o flow -->
+            <div class="activity-card row bg-darker">
+                    <div class="hour-section">Horario:<br> <span class = "hour">10:00 - 11:00</span></div>
+                    <div class="description"><button>activity descrition</button></div>
+            </div>
+            <div class="activity-card row bg-ligther">
+                    <div class="hour-section">Horario:<br> <span class = "hour">10:00 - 11:00</span></div>
+                    <div class="description"><button>activity descrition</button></div>
+            </div>
+            <div class="activity-card row bg-darker">
+                    <div class="hour-section">Horario:<br> <span class = "hour">10:00 - 11:00</span></div>
+                    <div class="description"><button>activity descrition</button></div>
+            </div>
+            <div class="activity-card row bg-ligther">
+                    <div class="hour-section">Horario:<br> <span class = "hour">10:00 - 11:00</span></div>
+                    <div class="description"><button>activity descrition</button></div>
+            </div>
+            <div class="activity-card row bg-darker">
+                    <div class="hour-section">Horario:<br> <span class = "hour">10:00 - 11:00</span></div>
+                    <div class="description"><button>activity descrition</button></div>
+            </div>
+            <div class="activity-card row bg-ligther">
+                    <div class="hour-section">Horario:<br> <span class = "hour">10:00 - 11:00</span></div>
+                    <div class="description"><button>activity descrition</button></div>
+            </div>
+            <div class="activity-card row bg-darker">
+                    <div class="hour-section">Horario:<br> <span class = "hour">10:00 - 11:00</span></div>
+                    <div class="description"><button>activity descrition</button></div>
+            </div>
+            <div class="activity-card row bg-ligther">
+                    <div class="hour-section">Horario:<br> <span class = "hour">10:00 - 11:00</span></div>
+                    <div class="description"><button>activity descrition</button></div>
+            </div>
+            <div class="activity-card row bg-darker">
+                    <div class="hour-section">Horario:<br> <span class = "hour">10:00 - 11:00</span></div>
+                    <div class="description"><button>activity descrition</button></div>
+            </div>
 
-        <!-- <div id="calendar-card" class="card">
+        </div>
+    </div>
+
+    <!-- <div id="calendar-card" class="card">
             <div class="month">
                 <ul>
                     <li class="prev"><button>&#10094</button></li>
@@ -48,7 +92,7 @@
             </div>
 
 
-            <!-- <table id="calendar">
+            <table id="calendar">
                 <tr class="weekdays">
                     <td>Mo</td>
                     <td>Tu</td>
@@ -106,109 +150,43 @@
             </table>
         </div> -->
 
-        <div id="time-card" class="card">
 
-            <h2>Dia X de Agosto</h2>
-            <div id="time-list">
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">10:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">11:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">12:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">13:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">14:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">15:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">16:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">17:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">18:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">19:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h2><b>Neopetwo</b></h2>
+            <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
+                care and love your best friend in the world!</p>
+            <a href="#">
+                <button class="btn">Learn more!</button>
+            </a>
+
+        </section>
+        <section>
+            <h2>Visit us!</h2>
+            <div class="line">
+                <p>
+                    <h3>Address</h3> 2544 São Carlos Avenue &bull; São Carlos, SP
+                </p>
             </div>
-        </div>
-    </div>
-
-   <!-- Footer -->
-	<footer>
-		<section>
-			<h2><b>Neopetwo</b></h2>
-			<p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
-				care and love your best friend in the world!</p>
-			<a href="#">
-				<button class="btn">Learn more!</button>
-			</a>
-
-		</section>
-		<section>
-			<h2>Visit us!</h2>
-			<div class="line">
-				<p>
-					<h3>Address</h3> 2544 São Carlos Avenue &bull; São Carlos, SP
-				</p>
-			</div>
-			<div class="line">
-				<p>
-					<h3>Phone</h3> (16) 0000-0000
-				</p>
-			</div>
-			<div class="line">
-				<p>
-					<h3>Email</h3> sac-neopetwo@neopetwo.com
-				</p>
-			</div>
-			<ul class="icons">
-				<li><a href="#" class="icon brands fa-twitter alt"><span class="label"></span></a></li>
-				<li><a href="#" class="icon brands fa-facebook alt"><span class="label"></span></a></li>
-				<li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
-			</ul>
-		</section>
-	</footer>
+            <div class="line">
+                <p>
+                    <h3>Phone</h3> (16) 0000-0000
+                </p>
+            </div>
+            <div class="line">
+                <p>
+                    <h3>Email</h3> sac-neopetwo@neopetwo.com
+                </p>
+            </div>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter alt"><span class="label"></span></a></li>
+                <li><a href="#" class="icon brands fa-facebook alt"><span class="label"></span></a></li>
+                <li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
+            </ul>
+        </section>
+    </footer>
 
     <!-- Scripts -->
 </body>

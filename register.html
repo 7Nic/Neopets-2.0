@@ -1,83 +1,95 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/nav_footer.css" />
-		<link rel="stylesheet" href="assets/css/style_register.css" />
-	</head>
-	<body class="container">
-				<!-- Nav -->
-				<nav>
-					<img src="./img/logo2.png">
-					<ul>
-						<li><a href="./index.html" class="active">Home</a></li>
-						<li class="active"><a href="user_action.html">Action Page</a></li>
-						<li><a href="calendar.html" href="#Calendar">Calendar</a></li>
-						<li><a href="pet_details.html">Your Animal</a></li>
-						<li><a href="login.html"><i class="fas fa-lock"></i>  Login</a></li>
-					</ul>
-				</nav>
 
-				<!-- Sign up -->
-					<div class="loginArea">
-						<form>
-							<h2>Create your account and start using the platform</h2>
-							<section>
-								<h3>Name</h3>
-								<input type="email" placeholder="Type here your name" name="">	
-							</section>
-							<section>
-								<h3>Email</h3>
-								<input type="email" placeholder="Type here your email" name="">								
-							</section>
-							<section>
-								<h3>Password</h3>
-								<input type="password" placeholder="Type here your password" name="">	
-							</section>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/nav_footer.css" />
+	<link rel="stylesheet" href="assets/css/style_register.css" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+				
 
-							<section>
-								<h3>Confirm your password</h3>
-								<input type="password" placeholder="Confirm your password" name="">	
-							</section>
-							<section>
-								<button class="btn">Sign up</button>	
-							</section>
-						</form>
-					</div>
-				<!-- End Sign up -->
+<body class="container">
+	<!-- Nav -->
+	<nav id="home-bar">
+		<a href="./index.html"><img src="./img/logo2.png"></a>
 
-				<!-- Footer -->
-					<footer>
-						<section>
-							<h2><b>Neopetwo</b></h2>
-							<p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to care and love your best friend in the world!</p>
-							<a href="#">
-								<button class="btn">Learn more!</button>
-							</a>
+		<ul>
+			<li class="active"><a href="user_action.html">My Account</a></li>
+			<li><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
+			<li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+		</ul>
+	</nav>
 
-						</section>
-						<section>
-							<h2>Visit us!</h2>
-							<div class="line">
-								<p><h3>Address</h3>  2544 São Carlos Avenue &bull; São Carlos, SP</p>
-							</div>
-							<div class="line">
-								<p><h3>Phone</h3>  (16) 0000-0000</p>
-							</div>
-							<div class="line">
-								<p><h3>Email</h3>  sac-neopetwo@neopetwo.com</p>
-							</div>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><i class="icon-repeat"></i><span class="label"></span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label"></span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
-							</ul>	
-						</section>
-					</footer>
-			<!-- </div> -->
+	<!-- Sign up -->
+	<!-- Sign up -->
+	<div class="registerArea">
+		<form>
+			<h2>Create your account and start using the platform</h2>
+			<section>
+				<h3>Name</h3>
+				<input type="email" placeholder="Type here your name" name="">	
+			</section>
+			<section>
+				<h3>Email</h3>
+				<input type="email" placeholder="Type here your email" name="">								
+			</section>
+			<section>
+				<h3>Password</h3>
+				<input type="password" placeholder="Type here your password" name="">	
+			</section>
+			
+			<section>
+				<h3>Confirm your password</h3>
+				<input type="password" placeholder="Confirm your password" name="">
+			</section>
+			<section>
+				<button class="btn">Sign up</button>
+			</section>
+		</form>
+	</div>
+	<!-- End Sign up -->
 
-		<!-- Scripts -->
-	</body>
+	<!-- Footer -->
+	<footer>
+		<section>
+			<h2><b>Neopetwo</b></h2>
+			<p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
+				care and love your best friend in the world!</p>
+			<a href="#">
+				<button class="btn">Learn more!</button>
+			</a>
+
+		</section>
+		<section>
+			<h2>Visit us!</h2>
+			<div class="line">
+				<p>
+					<h3>Address</h3> 2544 São Carlos Avenue &bull; São Carlos, SP
+				</p>
+			</div>
+			<div class="line">
+				<p>
+					<h3>Phone</h3> (16) 0000-0000
+				</p>
+			</div>
+			<div class="line">
+				<p>
+					<h3>Email</h3> sac-neopetwo@neopetwo.com
+				</p>
+			</div>
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter alt"><span class="label"></span></a></li>
+				<li><a href="#" class="icon brands fa-facebook alt"><span class="label"></span></a></li>
+				<li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
+			</ul>
+		</section>
+	</footer>
+
+	<!-- Scripts -->
+</body>
+
 </html>

@@ -10,16 +10,13 @@ a {
 	text-decoration: none;	
 }
 
-.loginArea {
+.registerArea {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	-webkit-box-shadow: 6px 7px 15px -1px rgba(0,0,0,0.52);
-	-moz-box-shadow: 6px 7px 15px -1px rgba(0,0,0,0.52);
-	box-shadow: 6px 7px 15px -1px rgba(0,0,0,0.52);
 }
 
-/*.loginArea form {
+.registerArea form {
 	margin-top: 7%;
 	margin-bottom: 7%;
 	background-color: #004445;
@@ -30,39 +27,16 @@ a {
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 20px;
+	-webkit-box-shadow: 6px 6px 21px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 21px -4px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 21px -4px rgba(0,0,0,0.75);
 }
 
-.loginArea input {
-	width: 65%;
-	margin-bottom: 20px;
-	padding: 8px;
-	border-radius: 9px;
-	font-size: 15px;
-}
-
-.loginArea h3 {
-	align-self: flex-start;
-	margin-left: 40%;
-}*/
-
-.loginArea form {
-	margin-top: 7%;
-	margin-bottom: 7%;
-	background-color: #004445;
-	width: 65%;
-	border-radius: 30px;
-	color: #FFF;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-bottom: 20px;
-}
-
-.loginArea section {
+.registerArea section {
 	width: 65%;
 }
 
-.loginArea input {
+.registerArea input {
 	width: 100%;
 	margin-bottom: 20px;
 	padding: 8px;
@@ -70,22 +44,22 @@ a {
 	font-size: 15px;
 }
 
-.loginArea h3 {
+.registerArea h3 {
 	align-self: flex-start;
 	font-size: 20px;
 }
 
-.loginArea p {
+.registerArea p {
 	font-size: 18px;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
-.loginArea a {
+.registerArea a {
 	text-decoration: none;
 	color: #EBB32B;
 }
 
-.loginArea a:hover {
+.registerArea a:hover {
 	color: #000;
 }
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin actions</title>
+    <link rel="stylesheet" href="assets/css/nav_footer.css"/>
+    <link rel="stylesheet" href="assets/css/style_adm.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+<!--Nav -->
+<nav id = "home-bar">
+    <a href="./index.html"><img src="./img/logo2.png"></a>
+
+    <ul>
+        <li><a href="user_action.html">My Account</a></li>
+        <li><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+    </ul>
+</nav>
+<div class="adm_nav">
+    <hr>
+    <h1>Your account has admin privileges</h1>
+    <hr>
+    <ul>
+        <li class="active"><a href="adm_actions.html">Register</a></li>
+        <li><a href="adm_services.html">Services</a></li>
+        <li><a href="adm_actions.html">Inventory</a></li>
+    </ul>
+</div>
+<!-- ADM Registration page nav-->
+<div class="adm_nav">
+    <h1>Registration</h1>
+    <ul>
+        <li class="active"><a href="adm_actions_add_adm.html"><i class="fas fa-user-cog"></i> Administrator</a></li>
+        <li><a href="adm_actions.add_customer.html"<i class="fas fa-user-tag"></i> Customer</a></li>
+        <li><a href="adm_actions_add_products.html"><i class="fas fa-tag"></i> Products</a></li>
+        <li><a href="adm_actions_add_services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+
+    </ul>
+</div>
+<hr>
+<!-- Main content-->
+<div class="content-wrapper">
+    <!-- ADM Registration page-->
+
+    <div class="adm_registration">
+        <!-- New admin form -->
+        <div class="form-popup" id="admin">
+            <form action="#" class="form-container">
+                <h2>New administrator</h2>
+
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter Email" name="name" required>
+
+                <label for="id">Id</label>
+                <input type="text" placeholder="Enter Email" name="name" required>
+
+                <label for="phone">Phone</label>
+                <input type="number" placeholder="(DDD) 00000-0000" name="name" required>
+
+                <label for="adm_pic">Picture:</label>
+                <input type="file" id="adm_pic" name="picture">
+
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="psw">Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Create</button>
+                <button type="button" class="btn cancel" onclick="closeForm(1)">Cancel</button>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <section>
+        <h2><b>Neopetwo</b></h2>
+        <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
+            care and love your best friend in the world!</p>
+        <a href="#">
+            <button class="btn">Learn more!</button>
+        </a>
+
+    </section>
+    <section>
+        <h2>Visit us!</h2>
+        <div class="line">
+            <p>
+            <h3>Address</h3> 2544 São Carlos Avenue &bull; São Carlos, SP
+            </p>
+        </div>
+        <div class="line">
+            <p>
+            <h3>Phone</h3> (16) 0000-0000
+            </p>
+        </div>
+        <div class="line">
+            <p>
+            <h3>Email</h3> sac-neopetwo@neopetwo.com
+            </p>
+        </div>
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter alt"><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-facebook alt"><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
+        </ul>
+    </section>
+</footer>
+</body>
+
+</html>

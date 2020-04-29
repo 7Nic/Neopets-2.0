@@ -1,52 +1,52 @@
+https://cdn.shopify.com/s/files/1/0070/7032/files/perfect_keto.jpg?v=1552615186
+https://cdn.shopify.com/s/files/1/0070/7032/files/primal1.jpg?v=1552616166
+https://cdn.shopify.com/s/files/1/0070/7032/files/wpstandard.jpg?v=1552615856
 <!DOCTYPE HTML>
 <html>
 
 <head>
-	<title>Home</title>
+	<title>Cart</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/nav_footer.css" />
-	<link rel="stylesheet" href="assets/css/style_login.css" />
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-		  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="assets/css/style_productpage.css" />
 </head>
 
 <body class="container">
 	<!-- Nav -->
-	<nav id="home-bar">
-		<a href="./index.html"><img src="./img/logo2.png"></a>
-
+	<nav id = "home-bar">
+		<img src="./img/logo2.png">
 		<ul>
-			<li class="active"><a href="user_action.html">My Account</a></li>
-			<li><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
-			<li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+			<li class="active"><a href="./index.html" class="active">Home</a></li>
+			<li><a href="user_action.html">Action Page</a></li>
+			<li><a href="calendar.html">Calendar</a></li>
+			<li><a href="pet_details.html">Your Animal</a></li>
 		</ul>
+		<div id="login-area">
+			<a href="login.html"><i class="fas fa-lock"></i> Login</a>
+			<a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+		</div>	
 	</nav>
+	<!-- End nav -->
 
+	<!-- Product -->
+	<div class="product">
+		<div class="photoArea">
+			<img src="./img/dogHouse.png">
+		</div>
+		<div class="paymentArea">
+			<h1>Total</h1>
+			<div class="cartTotal">
+				<p>Cart Total:</p>
+				<p id="cartTotal">$1348.00</p>
+			</div>
 
-	<!-- Login -->
-	<div class="loginArea">
-		<form>
-			<h1>Sign in</h1>
+			<button class="btn">Checkout</button>
 
-			<section>
-				<h3>Email</h3>
-				<input type="email" placeholder="Type here your email" name="">
-			</section>
-
-			<section>
-				<h3>Password</h3>
-				<input type="password" placeholder="Type here your password" name="">
-			</section>
-
-			<section>
-				<button class="btn">Sign in</button>
-			</section>
-
-			<p>Don't have an account yet? <a href="./register.html">Register now</a></p>
-		</form>
+		</div>
 	</div>
-	<!-- End Login -->
+
+	<!-- End Product -->
 
 	<!-- Footer -->
 	<footer>

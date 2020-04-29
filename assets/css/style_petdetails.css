@@ -6,10 +6,7 @@
     font-family: "Source Sans Pro", Helvetica, sans-serif;
 
 }
-body {
-    background-color: #004445;
-    background-image: radial-gradient(#ffd800 1%, #004445 99%);
-}
+
 select{
     background-color: #004445;
     width: 20em;
@@ -27,11 +24,13 @@ hr {
 
 /* Wrapper do conteúdo entre nav e header*/
 #wrapper {
-
     max-width: calc(100% - 4em);
     margin: 0 auto;
     border-style: none;
     margin: 1em 1em 1em 2em;
+    -webkit-box-shadow: 6px 6px 21px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 21px -4px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 21px -4px rgba(0,0,0,0.75);
 }
 /*Tabela*/
 table {

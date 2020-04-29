@@ -6,166 +6,44 @@
     <link rel="stylesheet" href="assets/css/nav_footer.css" />
     <link rel="stylesheet" href="assets/css/style_adm.css" />
     <link rel="stylesheet" href="assets/css/style_admInv.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-<!--Nav -->
-<nav>
-    <img src="./img/logo2.png">
+<!--Main Nav -->
+<nav id="home-bar">
+    <a href="./index.html"><img src="./img/logo2.png"></a>
+
     <ul>
-        <li><a href="./index.html" class="active">Home</a></li>
-        <li class="active"><a href="user_action.html">Action Page</a></li>
-        <li><a href="calendar.html">Calendar</a></li>
-        <li><a href="pet_details.html">Your Animal</a></li>
-        <li><a href="login.html"><i class="fas fa-lock"></i>  Login</a></li>
+        <li><a href="user_action.html">My Account</a></li>
+        <li><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
     </ul>
 </nav>
+<!-- Adm indicator nav -->
+<div class="adm_nav">
+    <hr>
+    <h1>Your account has admin privileges</h1>
+    <hr>
+    <ul>
+        <li><a href="adm_actions.html">Register</a></li>
+        <li class="active"><a href="adm_services.html">Services</a></li>
+        <li><a href="adm_inventory.html">Inventory</a></li>
+    </ul>
+</div>
 
 <!-- Main content-->
 <div class="content-wrapper">
-    <!-- Adm indicator nav -->
-    <div class="adm_nav">
-        <hr>
-        <h1>Your account has admin privileges</h1>
-        <hr>
-        <ul>
-            <li ><a href="adm_actions.html">Register</a></li>
-            <li class="active"><a href="adm_services.html">Services</a></li>
-            <li><a href="adm_inventory.html">Inventory</a></li>
-        </ul>
-    </div>
-    <!-- ADM Registration page-->
-    <!-- Buttons -->
-    <div class="adm_registration">
-        <h1>Services management</h1>
-        <button class="open-button" onclick="openForm(1)">Administrator</button>
-        <button class="open-button" onclick="openForm(2)">Customer</button>
-        <button class="open-button" onclick="openForm(3)">Products</button>
-        <button class="open-button" onclick="openForm(4)">Services</button>
 
-        <!-- New admin form -->
-        <div class="form-popup" id="admin">
-            <form action="#" class="form-container">
-                <h1>New administrator</h1>
-
-                <label for="name">Name</label>
-                <input type="text" placeholder="Enter Email" name="name" required>
-
-                <label for="id">Id</label>
-                <input type="text" placeholder="Enter Email" name="name" required>
-
-                <label for="phone">Phone</label>
-                <input type="number" placeholder="(DDD) 00000-0000" name="name" required>
-
-                <label for="adm_pic">Picture:</label>
-                <input type="file" id="adm_pic" name="picture">
-
-                <label for="email">Email</label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-                <label for="psw">Password</label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit" class="btn">Create</button>
-                <button type="button" class="btn cancel" onclick="closeForm(1)">Cancel</button>
-            </form>
-        </div>
-        <!-- New customer form -->
-        <div class="form-popup" id="customer">
-            <form action="#" class="form-container">
-                <h1>New customer</h1>
-
-                <label for="name">Name</label>
-                <input type="text" placeholder="Enter Email" name="name" required>
-
-                <label for="address">Adress</label>
-                <input type="text" placeholder="" name="name" required>
-
-                <label for="id">Id</label>
-                <input type="text" placeholder="Enter Email" name="name">
-
-                <label for="phone">Phone</label>
-                <input type="number" placeholder="(DDD) 00000-0000" name="name" required>
-
-                <label for="customer_pic">Picture:</label>
-                <input type="file" id="customer_pic" name="picture">
-
-                <label for="email">Email</label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw">Password</label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit" class="btn">Create</button>
-                <button type="button" class="btn cancel" onclick="closeForm(2)">Cancel</button>
-            </form>
-        </div>
-
-        <!-- New product form -->
-        <div class="form-popup" id="product">
-            <form action="#" class="form-container">
-                <h1>New product</h1>
-
-                <label for="name">Name</label>
-                <input type="text" placeholder="Enter name" name="name" required>
-
-                <label for="id">Id</label>
-                <input type="text" placeholder="" name="id">
-
-                <label for="product_pic">Picture:</label>
-                <input type="file" id="product_pic" name="picture">
-
-                <label for="description">Description</label>
-                <input type="text" placeholder="" name="description" required>
-
-                <label for="price">Price</label>
-                <input type="number" placeholder="$" name="price" required>
-
-                <label for="qnt">Initial quantity in stock</label>
-                <input type="number" placeholder="" name="qnt" required>
-
-
-
-                <button type="submit" class="btn">Submit</button>
-                <button type="button" class="btn cancel" onclick="closeForm(3)">Cancel</button>
-            </form>
-        </div>
-
-        <!-- New services form -->
-        <div class="form-popup" id="services">
-            <form action="#" class="form-container">
-                <h1>Add a new service</h1>
-
-                <label for="name">Name</label>
-                <input type="text" placeholder="Enter name" name="name" required>
-
-                <label for="id">Id</label>
-                <input type="text" placeholder="" name="id">
-
-                <label for="services_pic">Picture:</label>
-                <input type="file" id="services_pic" name="picture">
-
-                <label for="description">Description</label>
-                <input type="text" placeholder="" name="description" required>
-
-                <label for="price">Price</label>
-                <input type="number" placeholder="$" name="price" required>
-
-                <button type="submit" class="btn">Submit</button>
-                <button type="button" class="btn cancel" onclick="closeForm(4)">Cancel</button>
-            </form>
-        </div>
-
-    </div>
 
 </div>
-
-
-
 
 <!-- Footer -->
 <footer>
     <section>
         <h2><b>Neopetwo</b></h2>
-        <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to care and love your best friend in the world!</p>
+        <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
+            care and love your best friend in the world!</p>
         <a href="#">
             <button class="btn">Learn more!</button>
         </a>
@@ -174,20 +52,25 @@
     <section>
         <h2>Visit us!</h2>
         <div class="line">
-            <p><h3>Address</h3>  2544 São Carlos Avenue &bull; São Carlos, SP</p>
+            <p>
+                <h3>Address</h3> 2544 São Carlos Avenue &bull; São Carlos, SP
+            </p>
         </div>
         <div class="line">
-            <p><h3>Phone</h3>  (16) 0000-0000</p>
+            <p>
+                <h3>Phone</h3> (16) 0000-0000
+            </p>
         </div>
         <div class="line">
-            <p><h3>Email</h3>  sac-neopetwo@neopetwo.com</p>
+            <p>
+                <h3>Email</h3> sac-neopetwo@neopetwo.com
+            </p>
         </div>
         <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter alt"><i class="icon-repeat"></i><span class="label"></span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-twitter alt"><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-facebook alt"><span class="label"></span></a></li>
             <li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
         </ul>
-
     </section>
 </footer>
 <script src="assets/js/admin_actions.js"></script>

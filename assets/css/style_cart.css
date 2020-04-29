@@ -21,9 +21,25 @@ a {
 	flex-direction: row;
 }
 
+.divider1 {
+	border-top: 3px solid #004445;
+	margin-bottom: 30px;
+	/* width: 85%; */
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.divider2 {
+	border-top: 3px solid red;
+	background-color: yellow;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 /* Left */
 .productsArea {
-	width: 75%;
+	width: 70%;
 	display: flex;
 	flex-direction: column;
 	margin: 60px 0px;
@@ -79,12 +95,13 @@ a {
 	display: flex;
 	flex-direction: row;
 	background-color: #FFFFFF;
-	/* border: 1px solid #000; */
-	/* width: 100%; */
 }
 
 .qttBox p {
 	align-self: center;
+	font-size: 20px;
+	/* border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC; */
 }
 
 .qttBtn {
@@ -95,10 +112,11 @@ a {
 	box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
 	cursor:pointer;
 	vertical-align:middle;
-	max-width: 100px;
 	padding: 5px;
 	text-align: center;
 	height: 100%;
+	/* margin-left: 20px; */
+	margin-right: 70000px;
 }
 .qttBtn:active {
 	color:#000;
@@ -127,14 +145,15 @@ a {
 
 /* Right */
 .paymentArea {
-	width: 25%;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	color: #FFFFFF;
+	margin-left: 30px;
 }
 
 .paymentArea .box {
+	color: #FFFFFF;
 	background-color: #004445;
 	display: flex;
 	flex-direction: column;
@@ -148,8 +167,25 @@ a {
 	box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75);
 }
 
+.paymentArea .summary {
+	/* background-color: #004445; */
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right: 30px;
+	height: 60%;
+	border-radius: 15px;
+	/* -webkit-box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75); */
+}
+
 .paymentArea h1 {
 	margin-bottom: 50px;
+	align-self: flex-start;
+	font-size: 25px;
 }
 
 .paymentArea .cartTotal {
@@ -160,7 +196,7 @@ a {
 	margin-top: 100px;
 	display: flex;
 	flex-direction: row;
-	align-self: center;
+	align-self: flex-start;
 	font-size: 22px;
 }
 
@@ -177,18 +213,18 @@ a {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	border-radius: 20px;
-	width: 70%;
+	/* border-radius: 20px; */
+	/* width: 70%; */
 	align-self: center;
+	background-color: #004445;
+	color: #FFF;
 
-	background-color: #FFFFFF;
-	color: #000000;
-
-	
+	width: 100%;
+	border-radius: 0px;
 }
 
 .paymentArea .btn:hover {
 	background-color: #6FB98F;
-	color: #000;
+	/* color: #000; */
 	transition: background-color 200ms ease;
 }

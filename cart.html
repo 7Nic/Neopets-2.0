@@ -24,6 +24,8 @@
 	<div class="cartArea">
 		<div class="productsArea">
 			<h1>My cart</h1>
+			<hr class="divider1">
+
 			<div class="cartHeader">
 				<p>Product</p>
 				<p>Quantity</p>
@@ -37,9 +39,9 @@
 				</div>
 				<div class="productQuantity">
 					<div class="qttBox">
-						<div class="qttBtn fas fa-minus"></div>
+						<button class="qttBtn fas fa-minus"></button>
 						<p>2</p>
-						<div class="qttBtn fas fa-plus"></div>
+						<button class="qttBtn fas fa-plus"></button>
 					</div>
 				</div>
 				<div class="productPrice">$250.00</div>
@@ -50,8 +52,13 @@
 					<img src="./img/dog3.png" />
 					<p class="productTitle">Weird dog</p>
 				</div>
-				<p class="productQuantity"><button class="fas fa-minus"></button> 3 <button
-						class="fas fa-plus"></button></p>
+				<div class="productQuantity">
+					<div class="qttBox">
+						<button class="qttBtn fas fa-minus"></button>
+						<p>1</p>
+						<button class="qttBtn fas fa-plus"></button>
+					</div>
+				</div>
 				<p class="productPrice">$99.00</p>
 			</div>
 
@@ -60,20 +67,35 @@
 					<img src="./img/lizard1.png" />
 					<p class="productTitle">Rare lizard</p>
 				</div>
-				<p class="productQuantity"><button class="fas fa-minus"></button> 1 <button
-						class="fas fa-plus"></button></p>
+				<div class="productQuantity">
+					<div class="qttBox">
+						<button class="qttBtn fas fa-minus"></button>
+						<p>3</p>
+						<button class="qttBtn fas fa-plus"></button>
+					</div>
+				</div>
 				<p class="productPrice">$999.00</p>
 			</div>
 
 		</div>
 		<div class="paymentArea">
-			<div class="box">
+			<!-- <div class="box">
 				<h1>Total</h1>
 				<div class="cartTotal">
 					<p>Cart Total:</p>
 					<p id="cartTotal">$1348.00</p>
 				</div>
-
+				<button class="btn">Checkout</button>
+			</div> -->
+			<!-- https://www.templatemonster.com/blog/wp-content/uploads/2011/09/2-ae.jpg -->
+			<div class="summary">
+				<h1>Order summary</h1>
+				<!-- Essa desgraça de hr não aparece nem a pau -->
+				<hr class="divider2">
+				<div class="cartTotal">
+					<p>Cart Total:</p>
+					<p id="cartTotal">$1348.00</p>
+				</div>
 				<button class="btn">Checkout</button>
 			</div>
 		</div>

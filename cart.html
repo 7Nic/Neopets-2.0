@@ -1,105 +1,122 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Cart</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/nav_footer.css" />
-		<link rel="stylesheet" href="assets/css/style_cart.css" />
-	</head>
-	<body class="container">
-				<!-- Nav -->
-				<nav>
-					<img src="./img/logo2.png">
-					<ul>
-						<li><a href="./index.html" class="active">Home</a></li>
-						<li><a href="user_action.html">Action Page</a></li>
-						<li><a href="calendar.html" href="#Calendar">Calendar</a></li>
-						<li><a href="pet_details.html">Your Animal</a></li>
-						<li><a href="login.html"><i class="fas fa-lock"></i>  Login</a></li>
-						<li class="active"><a href="cart.html"><i class="fas fa-shopping-cart"></i>  Cart</a></li>
-					</ul>
-				</nav>
-				
-				<div class="cartArea">
-					<div class="productsArea">
-						<h1>My cart</h1>
-						<div class="cartHeader">
-							<p>Product</p>
-							<p>Quantity</p>
-							<p>Price</p>
-						</div>
 
-						<div class="product">
-							<div>
-								<img src="./img/bird1.png" />
-								<p class="productTitle">Nice bird</p>
-							</div>
-							<p class="productQuantity"><button class="fas fa-minus"></button>  2  <button class="fas fa-plus"></button></p>
-							<p class="productPrice">$250.00</p>
-						</div>
+<head>
+	<title>Cart</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/nav_footer.css" />
+	<link rel="stylesheet" href="assets/css/style_cart.css" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
 
-						<div class="product">
-							<div>
-								<img src="./img/dog3.png" />
-								<p class="productTitle">Weird dog</p>
-							</div>
-							<p class="productQuantity"><button class="fas fa-minus"></button>  3  <button class="fas fa-plus"></button></p>
-							<p class="productPrice">$99.00</p>
-						</div>
+<body class="container">
+	<nav id="home-bar">
+		<a href="./index.html"><img src="./img/logo2.png"></a>
 
-						<div class="product">
-							<div>
-								<img src="./img/lizard1.png" />
-								<p class="productTitle">Rare lizard</p>
-							</div>
-							<p class="productQuantity"><button class="fas fa-minus"></button>  1  <button class="fas fa-plus"></button></p>
-							<p class="productPrice">$999.00</p>
-						</div>
+		<ul>
+			<li><a href="user_action.html">My Account</a></li>
+			<li><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
+			<li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+		</ul>
+	</nav>
 
-					</div>
-					<div class="paymentArea">
-						<h1>Total</h1>
-						<div class="cartTotal">
-							<p>Cart Total:</p>
-							<p id="cartTotal">$1348.00</p>
-						</div>
+	<div class="cartArea">
+		<div class="productsArea">
+			<h1>My cart</h1>
+			<div class="cartHeader">
+				<p>Product</p>
+				<p>Quantity</p>
+				<p>Price</p>
+			</div>
 
-						<button class="btn">Checkout</button>	
-
+			<div class="product">
+				<div>
+					<img src="./img/bird1.png" />
+					<p class="productTitle">Nice bird</p>
+				</div>
+				<div class="productQuantity">
+					<div class="qttBox">
+						<div class="qttBtn fas fa-minus"></div>
+						<p>2</p>
+						<div class="qttBtn fas fa-plus"></div>
 					</div>
 				</div>
+				<div class="productPrice">$250.00</div>
+			</div>
 
-				<!-- Footer -->
-					<footer>
-						<section>
-							<h2><b>Neopetwo</b></h2>
-							<p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to care and love your best friend in the world!</p>
-							<a href="#">
-								<button class="btn">Learn more!</button>
-							</a>
+			<div class="product">
+				<div>
+					<img src="./img/dog3.png" />
+					<p class="productTitle">Weird dog</p>
+				</div>
+				<p class="productQuantity"><button class="fas fa-minus"></button> 3 <button
+						class="fas fa-plus"></button></p>
+				<p class="productPrice">$99.00</p>
+			</div>
 
-						</section>
-						<section>
-							<h2>Visit us!</h2>
-							<div class="line">
-								<p><h3>Address</h3>  2544 São Carlos Avenue &bull; São Carlos, SP</p>
-							</div>
-							<div class="line">
-								<p><h3>Phone</h3>  (16) 0000-0000</p>
-							</div>
-							<div class="line">
-								<p><h3>Email</h3>  sac-neopetwo@neopetwo.com</p>
-							</div>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><i class="icon-repeat"></i><span class="label"></span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label"></span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
-							</ul>	
-						</section>
-					</footer>
-			<!-- </div> -->
+			<div class="product">
+				<div>
+					<img src="./img/lizard1.png" />
+					<p class="productTitle">Rare lizard</p>
+				</div>
+				<p class="productQuantity"><button class="fas fa-minus"></button> 1 <button
+						class="fas fa-plus"></button></p>
+				<p class="productPrice">$999.00</p>
+			</div>
 
-		<!-- Scripts -->
-	</body>
+		</div>
+		<div class="paymentArea">
+			<div class="box">
+				<h1>Total</h1>
+				<div class="cartTotal">
+					<p>Cart Total:</p>
+					<p id="cartTotal">$1348.00</p>
+				</div>
+
+				<button class="btn">Checkout</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<section>
+			<h2><b>Neopetwo</b></h2>
+			<p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
+				care and love your best friend in the world!</p>
+			<a href="#">
+				<button class="btn">Learn more!</button>
+			</a>
+
+		</section>
+		<section>
+			<h2>Visit us!</h2>
+			<div class="line">
+				<p>
+					<h3>Address</h3> 2544 São Carlos Avenue &bull; São Carlos, SP
+				</p>
+			</div>
+			<div class="line">
+				<p>
+					<h3>Phone</h3> (16) 0000-0000
+				</p>
+			</div>
+			<div class="line">
+				<p>
+					<h3>Email</h3> sac-neopetwo@neopetwo.com
+				</p>
+			</div>
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter alt"><span class="label"></span></a></li>
+				<li><a href="#" class="icon brands fa-facebook alt"><span class="label"></span></a></li>
+				<li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
+			</ul>
+		</section>
+	</footer>
+	<!-- </div> -->
+
+	<!-- Scripts -->
+</body>
+
 </html>

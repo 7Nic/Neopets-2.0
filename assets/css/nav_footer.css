@@ -2,6 +2,12 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
+
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     margin: 0px;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -11,47 +17,95 @@ a {
     text-decoration: none;
 }
 
-nav {
-    background-color: #004445;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    color: #FFF;
-    display: flex;
+*{
+	padding: 0;
+	margin: 0;
+
+	box-sizing: border-box;
 }
 
-nav img {
+/* General */
+body {
+	margin: 0px;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;	
+}
+
+
+.column{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+/* ######################################################################################### */
+
+.banner {
+	
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+/* ############################################################################################################################3 */
+#home-bar{
+    background-color: #004445;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#home-bar img {
     height: 100px;
     width: auto;
     margin-left: 2%;
 }
 
-nav a {
+#home-bar a {
     font-size: 20px;
     font-weight: bold;
     color: #FFF;
     padding: 6px 12px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
-nav ul .active a {
-    background-color: #6FB98F;
-    border-radius: 10px;
-}
-
-nav a:hover {
-    background-color: #6FB98F;
-    border-radius: 10px;
-}
-
-nav ul {
+#home-bar ul{
     margin-left: 70px;
-    margin-top: 35px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    width: 85%;
 }
 
-nav li {
+#home-bar ul .active a {
+    background-color: #6FB98F;
+    border-radius: 10px;
+}
+
+#home-bar li {
     display: inline;
 }
 
+#home-bar li a:hover {
+    background-color: #6FB98F;
+    border-radius: 10px;
+}
+
+#login-area{
+    font-size: 8px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* #######################################################################################################33 */
 /* Footer */
 footer {
     background-color: #004445;
@@ -62,8 +116,14 @@ footer {
     padding: 3em 3em 3em 3em;
 }
 
+
 footer section {
     width: 45%;
+}
+
+footer p{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 footer .line h3 {
@@ -102,25 +162,32 @@ footer .btn:hover {
     transition: background-color 200ms ease;
 }
 
+.icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .icon.brands {
     font-family: 'Font Awesome 5 Brands';
     color: #ffffff;
     font-size: 35px;
-    margin-right: 40px;
+    margin: 10px;
     border: solid 1px whitesmoke;
     border-radius: 50%;
     padding: 10px;
-    width: 300px;
-    height: 300px;
+  
+    
 }
 
 /*Admin nav-bar style */
 .adm_nav{
     background-color: #004445;
     padding: 1px;
-    margin: 0;
     text-align: center;
     list-style-type: none;
+
+
 
 }
 .adm_nav h1{
@@ -137,11 +204,11 @@ footer .btn:hover {
 }
 
 .adm_nav a {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: #FFF;
     padding: 0.3em;
-    margin: 1em 1em 1em 1em;
+    margin: 0.5em 1em 0.5em 1em;
 
 }
 
@@ -155,7 +222,10 @@ footer .btn:hover {
 }
 
 .adm_nav  li{
-    display: inline-block;
+    display: inline-flex;
+}
+.adm_nav  ul{
+
 }
 .adm_registration h1{
     text-align: center;
@@ -170,4 +240,11 @@ hr {
     margin: 0em 0;
     padding: 0;
     border-color: #ffd800;
+}
+
+
+@media only screen and (max-width: 500px){
+    #home-bar li{
+        display: block;
+    }
 }

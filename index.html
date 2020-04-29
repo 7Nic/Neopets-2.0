@@ -1,136 +1,144 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/nav_footer.css" />
-		<link rel="stylesheet" href="assets/css/style_index.css" />
-	</head>
-	<body class="container">
-				<!-- Nav -->
-				<nav>
-					<img src="./img/logo2.png">
-					<ul>
-						<li class="active"><a href="./index.html" class="active">Home</a></li>
-						<li><a href="user_action.html">Action Page</a></li>
-						<li><a href="calendar.html" href="#Calendar">Calendar</a></li>
-						<li><a href="pet_details.html">Your Animal</a></li>
-						<li><a href="login.html"><i class="fas fa-lock"></i>  Login</a></li>
-						<li><a href="cart.html"><i class="fas fa-shopping-cart"></i>  Cart</a></li>
-					</ul>
-				</nav>
-				<!-- Popular categories -->
-					<div class="items">
-						<h2>Popular categories</h2>
-						<div class="pics">
-							<a href="#" class="blocks">
-								<img src="./img/cat1.png">
-								<p>Cat</p>	
-							</a>
-							<a href="#" class="blocks">
-								<img src="./img/dog2.png">	
-								<p>Dogs</p>	
-							</a>
-							<a href="#" class="blocks">
-								<img src="./img/fish1.png">	
-								<p>Fish</p>	
-							</a>
-							<a href="#" class="blocks">
-								<img src="./img/bird1.png">	
-								<p>Birds</p>	
-							</a>
-						</div>
-					</div>
+
+<head>
+	<title>Home</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/nav_footer.css" />
+	<link rel="stylesheet" href="assets/css/style_index.css" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+	<!-- Home Bar -->
+	<nav id="home-bar">
+		<a href="./index.html"><img src="./img/logo2.png"></a>
+
+		<ul>
+			<li><a href="user_action.html">My Account</a></li>
+			<li><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
+			<li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+		</ul>
+	</nav>
 
 
-					<div id="main">
-						<!-- Content -->
-						<section class="main">
-							<div class="banner banner1">
-								<div class="bannerText">
-									<h2 class="title">Small Pets Supplies & Accessories</h2>		
-									<p class="description">Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>
-									<a href="#">
-										<button class="btn btn1">SHOP NOW</button>	
-									</a>
-								</div>
-								<img class="animalBannerImg" src="./img/dog1.png">
-							</div>
-						</section>						
-					</div>
-				<!-- End Main -->
 
-				<!-- Popular products -->
-					<div class="items">
-						<h2>Popular products</h2>
-						<div class="pics">
-							<a href="#" class="blocks">
-								<img src="./img/dogHouse.png">
-								<p>Dog houses</p>	
-							</a>
-							<a href="#" class="blocks">
-								<img src="./img/petToy.png">	
-								<p>Toys</p>	
-							</a>
-							<a href="#" class="blocks">
-								<img src="./img/birdHouse.png">	
-								<p>Bird houses</p>	
-							</a>
-							<a href="#" class="blocks">
-								<img src="./img/travellerCapri.png">	
-								<p>Traveller Capri</p>	
-							</a>
-						</div>
-					</div>
+	<!-- Popular categories -->
+	<div class="banner popular-list">
+		<h2>Popular categories</h2>
+		<div>
+			<a href="#">
+				<img src="./img/cat1.png">
+				<p>Cat</p>
+			</a>
+			<a href="#">
+				<img src="./img/dog2.png">
+				<p>Dogs</p>
+			</a>
+			<a href="#">
+				<img src="./img/fish1.png">
+				<p>Fish</p>
+			</a>
+			<a href="#">
+				<img src="./img/bird1.png">
+				<p>Birds</p>
+			</a>
+		</div>
+	</div>
 
-				<!-- Bird Snacks & Crackers -->
-					<div id="main">
-						<section class="main">
-							<div class="banner banner2">
-								<img class="animalBannerImg" src="./img/bird2.png">
-								<div class="bannerText">
-									<h2 class="title">Bird Snacks & Crackers</h2>		
-									<p class="description">Bird supplies, bird accessories and bird food at zooplus: your bird pet shop. Whether parrot toys, perches, bird toys, or a budgie cage, zooplus has what you need!</p>
-									<a href="#">
-										<button class="btn btn2">SHOP NOW</button>	
-									</a>
-								</div>
-							</div>
-						</section>						
-					</div>
-				<!-- End Bird Snacks & Crackers -->
 
-				<!-- Footer -->
-					<footer>
-						<section>
-							<h2><b>Neopetwo</b></h2>
-							<p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to care and love your best friend in the world!</p>
-							<a href="#">
-								<button class="btn">Learn more!</button>
-							</a>
+	<!-- Shop info -->
+	<div class="banner" id="shop-info">
+		<div class="info-description">
+			<h2>Small Pets Supplies & Accessories</h2>
+			<p>Pair large text with an image to give focus to your chosen product,
+				collection, or blog post. Add details on availability, style, or even provide a review.</p>
+			<a href="#">
+				<button class="button green-hover">SHOP NOW</button>
+			</a>
+		</div>
+		<img class="info-img" src="./img/dog1.png">
+	</div>
 
-						</section>
-						<section>
-							<h2>Visit us!</h2>
-							<div class="line">
-								<p><h3>Address</h3>  2544 São Carlos Avenue &bull; São Carlos, SP</p>
-							</div>
-							<div class="line">
-								<p><h3>Phone</h3>  (16) 0000-0000</p>
-							</div>
-							<div class="line">
-								<p><h3>Email</h3>  sac-neopetwo@neopetwo.com</p>
-							</div>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><i class="icon-repeat"></i><span class="label"></span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label"></span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
-							</ul>	
-						</section>
-					</footer>
-			<!-- </div> -->
 
-		<!-- Scripts -->
-	</body>
+	<!-- Popular products -->
+	<div class="banner popular-list">
+		<h2>Popular products</h2>
+		<div>
+			<a href="#">
+				<img src="./img/dogHouse.png">
+				<p>Dog houses</p>
+			</a>
+			<a href="#">
+				<img src="./img/petToy.png">
+				<p>Toys</p>
+			</a>
+			<a href="#">
+				<img src="./img/birdHouse.png">
+				<p>Bird houses</p>
+			</a>
+			<a href="#">
+				<img src="./img/travellerCapri.png">
+				<p>Traveller Capri</p>
+			</a>
+		</div>
+	</div>
+
+
+	<!-- Bird Snacks & Crackers -->
+
+	<div class="banner" id="bird-info">
+		<img class="info-img" src="./img/bird2.png">
+		<div class="info-description">
+			<h2>Bird Snacks & Crackers</h2>
+			<p>Bird supplies, bird accessories and bird food at zooplus: your bird pet shop.
+				Whether parrot toys, perches, bird toys, or a budgie cage, zooplus has what you need!</p>
+			<a href="#">
+				<button class="button yellow-hover">SHOP NOW</button>
+			</a>
+		</div>
+	</div>
+	<!-- End Bird Snacks & Crackers -->
+
+	<!-- Footer -->
+	<footer>
+		<section>
+			<h2><b>Neopetwo</b></h2>
+			<p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
+				care and love your best friend in the world!</p>
+			<a href="#">
+				<button class="btn">Learn more!</button>
+			</a>
+
+		</section>
+		<section>
+			<h2>Visit us!</h2>
+			<div class="line">
+				<p>
+					<h3>Address</h3> 2544 São Carlos Avenue &bull; São Carlos, SP
+				</p>
+			</div>
+			<div class="line">
+				<p>
+					<h3>Phone</h3> (16) 0000-0000
+				</p>
+			</div>
+			<div class="line">
+				<p>
+					<h3>Email</h3> sac-neopetwo@neopetwo.com
+				</p>
+			</div>
+			<div class="icons">
+				<a href="#" class="icon brands fa-twitter alt"><span class="label"></span></a></li>
+				<a href="#" class="icon brands fa-facebook alt"><span class="label"></span></a></li>
+				<a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
+			</div>
+		</section>
+	</footer><!-- Footer -->
+
+
+	<!-- Scripts -->
+</body>
+
 </html>

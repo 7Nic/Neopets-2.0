@@ -1,9 +1,12 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 body {
 	margin: 0px;
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+	font-family: 'Merriweather', serif;
 }
 
 a {
@@ -31,43 +34,90 @@ a {
 }
 
 .photoArea img {
-	width: 450px;
+	width: 550px;
 	height: auto;
 }
 
 .paymentArea {
 	width: 25%;
-	margin-right: 2%;
-	border-radius: 15px;
+	margin-right: 5%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 2px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
+	justify-content: space-between;
 	-webkit-box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75);
 }
 
-.paymentArea #title {
+.paymentArea h1 {
 	font-size: 30px;
 	font-weight: bold;
+	max-width: 85%;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.paymentArea #qtt {
-	font-size: 22px;
+.paymentArea p#qtt {
+	color: rgb(107, 107, 107);
+	font-size: 15px;
+	margin-bottom: 4px;
+}	
+
+.paymentArea input#zip-code {
+	width: 100%;
+  padding: 7.5px 6px;
+  margin-top: 3px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
+
+.rating {
+  unicode-bidi: bidi-override;
+	direction: rtl;
+	font-size: 23px;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\2605";
+	position: absolute;
+	color: yellow;
+	}
 
 .price {
-	margin-top: 100px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	align-items: flex-start;
 	align-self: center;
 	font-size: 22px;
 }
 
 #price {
-	margin-left: 5px;
-	color: #EBB32B;
 	font-size: 30px;
+
+}
+
+.qttBox {
+	display: flex;
+	flex-direction: row;
+	background-color: #FFFFFF;
+}
+
+.qttBox p {
+	font-size: 18px;
+	/* margin-right: 5%; */
 }
 
 .paymentArea .btn {
@@ -78,10 +128,11 @@ a {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	border-radius: 20px;
+	border-radius: 2px;
+	/* background-color: #004445; */
 	background-color: #004445;
 	color: #FFF;
-	width: 70%;
+	width: 100%;
 	align-self: center;
 	margin-bottom: 30px;
 }

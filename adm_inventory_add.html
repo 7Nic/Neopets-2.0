@@ -5,7 +5,6 @@
     <title>Admin actions</title>
     <link rel="stylesheet" href="assets/css/nav_footer.css"/>
     <link rel="stylesheet" href="assets/css/style_adm.css"/>
-    <link rel="stylesheet" href="assets/css/style_admInv.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -29,7 +28,7 @@
     <ul>
         <li><a href="adm_actions.html">Register</a></li>
         <li><a href="adm_services.html">Services</a></li>
-        <li  class="active"><a href="adm_inventory.html">Inventory</a></li>
+        <li class="active"><a href="adm_inventory.html">Inventory</a></li>
     </ul>
 </div>
 
@@ -50,21 +49,19 @@
     <!-- New admin form -->
     <div class="adm_registration">
         <div class="form-popup" id="add_product">
-            <form action="#" class="product-list-container">
+            <form action="#" class="form-container">
                 <h1>Add to an existing product</h1>
                 <p>Want to register a new product instead? Check out the <a href="adm_actions.html">Register screen!</a>
                 </p>
-                <form id="product_listing">
-                    <select name="product_listing">
-                        <option value="">- Select a product -</option>
-                    </select>
-                </form>
+                <select name="product_listing">
+                    <option value="">- Select a product -</option>
+                </select>
                 <div id="qntty">
                     <label id="product_quantity">Quantity</label>
                     <input type="number" placeholder="" name="quantity" required>
                 </div>
                 <button type="submit" class="btn">Submit</button>
-                <button type="button" class="btn cancel" onclick="closeForm(1)">Cancel</button>
+                <button type="button" class="btn cancel">Cancel</button>
             </form>
         </div>
     </div>

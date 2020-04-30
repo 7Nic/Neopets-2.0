@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 .content-wrapper {
-    height: 95%;
+    height: 100%;
 }
 
 .content-wrapper select{
@@ -71,7 +71,9 @@ ul,
 @media screen and (min-width: 55em) {
     .calendar-contain {
         width: 95%;
-        top: 5%;
+    }
+    .content-wrapper{
+        height: 800px;
     }
 }
 

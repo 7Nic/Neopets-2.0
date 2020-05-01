@@ -100,6 +100,10 @@ select:focus{
     /* display: inline-block; */
 }
 
+#home-bar a#logo {
+    padding: 0px 20px;
+}
+
 #home-bar ul{
     margin-left: 70px;
     margin-top: 17px;

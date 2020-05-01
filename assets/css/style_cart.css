@@ -1,12 +1,9 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 body {
 	margin: 0px;
-	/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
-	font-family: 'Merriweather', serif;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 a {
@@ -24,8 +21,6 @@ a {
 	flex-direction: row;
 }
 
-<<<<<<< HEAD
-=======
 .divider1 {
 	border-top: 2px solid #004445;
 	margin-bottom: 30px;
@@ -46,7 +41,6 @@ a {
 	width: 100%;
 }
 
->>>>>>> master
 /* Left */
 .productsArea {
 	width: 70%;
@@ -58,10 +52,6 @@ a {
 .cartArea h1 {
 	align-self: center;
 	margin-bottom: 30px;
-<<<<<<< HEAD
-=======
-	font-family: 'Montserrat', sans-serif;
->>>>>>> master
 }
 
 .cartHeader {
@@ -109,18 +99,10 @@ a {
 	display: flex;
 	flex-direction: row;
 	background-color: #FFFFFF;
-<<<<<<< HEAD
-	border: 1px solid #000;
-=======
->>>>>>> master
 }
 
 .qttBox p {
 	align-self: center;
-<<<<<<< HEAD
-}
-
-=======
 	font-size: 20px;
 	/* border-top:1px solid #CCC;
 	border-bottom:1px solid #CCC; */
@@ -149,7 +131,6 @@ a {
 	height: 100%;
 } */
 
->>>>>>> master
 .fa-minus {
 	color: #7d7d7d;
 	font-size: 15px;
@@ -181,17 +162,6 @@ a {
 	background-color: #004445;
 	display: flex;
 	flex-direction: column;
-<<<<<<< HEAD
-	justify-content: center;
-	color: #FFFFFF;
-}
-
-.paymentArea .box {
-	background-color: #004445;
-	display: flex;
-	flex-direction: column;
-=======
->>>>>>> master
 	align-items: center;
 	justify-content: center;
 	margin-right: 30px;
@@ -200,17 +170,6 @@ a {
 	-webkit-box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: 3px 9px 21px -9px rgba(0,0,0,0.75);
-<<<<<<< HEAD
-}
-
-.paymentArea h1 {
-	margin-bottom: 50px;
-}
-
-.paymentArea .cartTotal {
-	margin-bottom: 30px;
-=======
->>>>>>> master
 }
 
 .paymentArea .summary {
@@ -272,16 +231,6 @@ a {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-<<<<<<< HEAD
-	border-radius: 20px;
-	width: 70%;
-	align-self: center;
-
-	background-color: #FFFFFF;
-	color: #000000;
-
-	
-=======
 	/* border-radius: 20px; */
 	/* width: 70%; */
 	align-self: center;
@@ -290,7 +239,6 @@ a {
 
 	width: 100%;
 	border-radius: 0px;
->>>>>>> master
 }
 
 .paymentArea .btn:hover {

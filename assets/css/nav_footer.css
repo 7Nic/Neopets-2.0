@@ -62,8 +62,8 @@ a {
 /* ############################################################################################################################3 */
 /* #EEBF47 */
 #home-bar{
-    /* background-color: #004445; */
-    background-color: rgb(58, 104, 255);
+    background-color: #004445;
+    /* background-color: rgb(58, 104, 255); Azul do submarino  */
     color: #FFF;
     display: flex;
     flex-direction: row;

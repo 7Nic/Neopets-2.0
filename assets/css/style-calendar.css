@@ -1,198 +1,198 @@
-#calendar{
+#input-bar{
   padding:0;
 }
-#calendar h2{
-  width: 80%;
+#input-bar h2{
+  width: 70%;
   color: white;
   text-align: center;
   padding-top:0.5em;
   padding-bottom: 0.5em;
-  position: relative;
-  left:10%
+  
 }
 
-#calendar input{
+#input-bar .box{
   /* margin-right: 1em; */
-  width: 20%;
-  text-align: center;
+  width: 15%;
+  text-align-last: center;
+  font-size: 18px;
+  color: #777;
+  /* font-weight: bold; */
   padding-top:0.5em;
   padding-bottom: 0.5em;
   background-color:#eee;
-  border:none;
+  border:none;  
   /* border-radius: 0.8em; */
 }
 
+#input-bar option
+{
+  text-align: center;
+}
+
+
 
 /* ####################################################################################################################### */
 
-
-
 /* ####################################################################################################################### */
 
+.bg-darker{
+  
+  background-color:  #ddd;
+  
+}
+.bg-lighter{
+  background-color: #eee;
+}
 
 #activities-list{
-  padding-right: 13%;
-  padding-left:13%;
+  margin-right: 15%;
+  margin-left:15%;
+}
+
+#activities-list h2{
+  text-align: center;
+
 }
 
 .activity-card
 {
-  border-top: 2px solid #919191;
   color: #777;
   width: 100%;
+    box-shadow:2px 2px 5px  #919191;
+}
+
+.activity-card.bg-darker{
+  border-top: 2px solid #919191;
 }
 
 .hour-section{
   
   padding-left: 1em;
   padding-right: 1em;
-  width: 15%;
+  width:max-content;
+  padding: 1em;
+  box-shadow:2px 0 5px  #919191;
+}
+
+
+.hour-text{
+  font-size: 23px;
+  color: rgb(95, 95, 95);
   
-  box-shadow:0 0 4px 0  #919191;
-}
-.bg-darker{
-  background-color:  #ddd;
-}
-.bg-lighter{
-  background-color: #eee;
 }
 
-
-.hour{
-  font-size: 22px;
-}
-
-.description{ 
+.info{ 
   width: 85%;
-  text-align: center;
-  position: relative;
-  right: 7.5%;
-}
-
-.description button{
-  color: inherit;
-  background-color: inherit;
-  font: inherit;
-  border: none;
-  width: 100%;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  margin: 0;
+  text-align: start;
+  justify-content: space-between;
+  padding:1em;
+  flex-wrap: wrap;
 }
 
 
-/* ################################################################################################################### */
-
-/* Month header */
-.month {
-  padding-top: 0 ;
-  padding-bottom: 20px;
-  text-align: center;
-  height: 15%;
-}
-
-/* Month list */
-.month ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-/* Previous button inside month header */
-.month .prev {
-  float: left;
-}
-
-/* Next button */
-.month .next {
-  float: right;
-
-}
-
-.month button{
-  background-color: inherit;
-  font:inherit;
-  color: inherit;
-  border:none;  
-  border-radius: 0.2em ;
-
-}
-
-.month button:hover{
-  background-color: rgba(201, 201, 201, 0.541);
-  color: rgb(247, 245, 245);
-}
-.month button:active{
+.info .column{
+  width: 30%;
   
-  background-color: rgba(221, 221, 221, 0.747);
-  color: #666;
 }
-.month button:focus{
+
+.info .select-pet{
+  margin-top: 2em;
+  background-color: #6FB98F;
+  color: #FFF;
+  text-align-last: center;
+  height: 2em;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.info .description{
+  width: 50%
+
+}
+
+.info .schedule-button{
+  width: 100px;
+  height: 40px;
+  margin-top:1.5em;
+  background-color: #6FB98F;
+  color: #FFF;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.info .schedule-button:hover {
+  background-color: #EBB32B;
+  color: #000;
+  transition: background-color 200ms ease;
+}
+
+.info .schedule-button:focus{
   outline: 0;
 }
 
-/* #calendar{
-  margin: auto;
-  width: 100%;
-  height: 74%;
-  background-color: #ddd;
-  padding:0;
-  border-collapse: collapse;
-  border-radius: 1em;
-  overflow: hidden;
+
+@media only screen and (max-width: 850px){
   
-} */
-
-/* Weekdays (Mon-Sun) */
-.weekdays {
-  margin: 0;
-  padding:  0;
-  background-color:#ddd;
+  #input-bar .box{
+  /* margin-right: 1em; */
+  width:65%;
+  text-align-last: center;
+  font-size: 18px;
+  color: #777;
+  /* font-weight: bold; */
+  padding-top:0.5em;
+  padding-bottom: 0.5em;
+  background-color:#eee;
+  border:none;  
+  /* border-radius: 0.8em; */
 }
+  .activity-card
+  {
+    display: flex;
+    flex-direction: column;
+  }
 
-.weekdays td {
-  color: #666;
-  text-align: center;
+  .hour-section{
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 1px 2px  #919191;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .info{
+      
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-between; */
+      width: 100%;
+      
+  }
+  .info .column{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .info .select-pet{
+    margin-top: 1em;
+    
+    text-align-last: center;
+    height: 3em;
+  } 
+
+  .info .description{
+    width: 100%;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .info .schedule-button{
+    width: 80%;
+    margin-left: 10%;
+
+    height: 2em;
+  }
 }
-
-/* Days (1-31) */
-.week {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
-}
-
-.week td{
-  text-align: center;
-  margin-bottom: 5px;
-
- 
-}
-
-.week button{
-  border: none;
-  font-size: 16px;
-  color: #777; 
-  padding:5px;
-  border-radius: 0.5em;
-}
-.week button:hover{
-  background: #a4d8ce;
-  color: white !important; 
-}
-
-
-/* Highlight the "current" day */
-.week button:focus {
-  outline:0;
-  background: #1abc9c;
-  color: white !important; 
-}
-

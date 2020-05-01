@@ -189,9 +189,10 @@ footer .btn:hover {
 .adm_nav{
     background-color: #004445;
     padding: 1px;
-    margin: 0;
     text-align: center;
     list-style-type: none;
+
+
 
 }
 .adm_nav h1{
@@ -208,11 +209,11 @@ footer .btn:hover {
 }
 
 .adm_nav a {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: #FFF;
     padding: 0.3em;
-    margin: 1em 1em 1em 1em;
+    margin: 0.5em 1em 0.5em 1em;
 
 }
 
@@ -226,7 +227,10 @@ footer .btn:hover {
 }
 
 .adm_nav  li{
-    display: inline-block;
+    display: inline-flex;
+}
+.adm_nav  ul{
+
 }
 .adm_registration h1{
     text-align: center;

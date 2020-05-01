@@ -2,53 +2,51 @@
 <html>
 
 <head>
-	<title>Home</title>
+	<title>Login</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/nav_footer.css" />
 	<link rel="stylesheet" href="assets/css/style_login.css" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body class="container">
 	<!-- Nav -->
-	<nav id = "home-bar">
+	<nav id="home-bar">
 		<a href="./index.html"><img src="./img/logo2.png"></a>
-		
+
 		<ul>
-			<li><a href="user_action.html">Action Page</a></li>
-			<li><a href="calendar.html">Calendar</a></li>
-			<li><a href="pet_details.html">Your Animal</a></li>
+			<li><a href="user_action.html">My Account</a></li>
+			<li class="active"><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
+			<li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
 		</ul>
-
-
-		<div id="login-area">
-			<a href="login.html"><i class="fas fa-lock"></i> Login</a>
-			<a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
-		</div>	
 	</nav>
 
 
 	<!-- Login -->
 	<div class="loginArea">
-		<form>
-			<h1>Sign in</h1>
 
-			<section>
-				<h3>Email</h3>
-				<input type="email" placeholder="Type here your email" name="">
-			</section>
-
-			<section>
-				<h3>Password</h3>
-				<input type="password" placeholder="Type here your password" name="">
-			</section>
-
-			<section>
-				<button class="btn">Sign in</button>
-			</section>
-
-			<p>Don't have an account yet? <a href="./register.html">Register now</a></p>
-		</form>
+		<div class="box">
+			<div class="ilustration">
+				<img src="./img/login-ilustration.png">
+			</div>
+			<form>
+				<h1>NeoPetwo</h1>
+				<section>
+					<h3>Email</h3>
+					<input type="email" placeholder="Type here your email" name="">
+				</section>
+				<section>
+					<h3>Password</h3>
+					<input type="password" placeholder="Type here your password" name="">
+				</section>
+				<section>
+					<button class="btn">Sign in</button>
+				</section>
+				<p>Don't have an account yet? <a href="./register.html">Register now</a></p>
+			</form>
+		</div>
 	</div>
 	<!-- End Login -->
 

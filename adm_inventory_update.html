@@ -5,7 +5,6 @@
     <title>Admin actions</title>
     <link rel="stylesheet" href="assets/css/nav_footer.css"/>
     <link rel="stylesheet" href="assets/css/style_adm.css"/>
-    <link rel="stylesheet" href="assets/css/style_admInv.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -50,15 +49,11 @@
     <!-- Update product form -->
     <div class="adm_registration">
         <div class="form-popup" id="update_product">
-            <h1>Update an existing product</h1>
-            <form id="product_listing">
+            <form action="#" class="form-container">
+                <h1>Update an existing product</h1>
                 <select name="product_listing">
                     <option value="">- Select a product -</option>
                 </select>
-            </form>
-
-            <form action="#" class="form-container">
-
                 <label for="name">Name</label>
                 <input type="text" placeholder="Enter name" name="name" required>
 
@@ -74,7 +69,7 @@
                 <label for="price">Price</label>
                 <input type="number" placeholder="$" name="price" required>
 
-                <label for="qnt">Initial quantity in stock</label>
+                <label for="qnt">Quantity in stock</label>
                 <input type="number" placeholder="" name="qnt" required>
 
                 <button type="submit" class="btn">Create</button>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User actions</title>
+    <link rel="stylesheet" href="assets/css/nav_footer.css"/>
+    <link rel="stylesheet" href="assets/css/style_useractions.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+<nav id="home-bar">
+    <a href="./index.html"><img src="./img/logo2.png"></a>
+
+    <ul>
+        <li class="active"><a href="user_action.html">My Account</a></li>
+        <li><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+    </ul>
+</nav>
+
+<!-- Main content-->
+<div class="wrapper">
+    <!-- Schedule time banner -->
+    <a class="catalog_link" href="calendar.html">
+        <div id="section-time">
+            <img src="img/neopets-pngs-4.png" alt="cute animal picture">
+            <p>Schedule time</p>
+            <img src="img/neopets-pngs-6.png" alt="cute animal picture">
+        </div>
+    </a>
+    <hr/>
+    <!-- Product catalog banner -->
+    <a class="catalog_link" href="#">
+        <div id="section-catalog">
+            <img src="img/neopets-pngs-2.png" alt="dog holding shopping cart">
+            <p>Check out our product catalog</p>
+            <img id="shopping_cart" src="img/shopping_cart.png" alt="dog holding shopping cart">
+        </div>
+    </a>
+    <hr/>
+
+    <!-- List and egister new pet-->
+    <div id="section-double">
+        <a class="catalog_link" href="#">
+            <div id="uActSect-newpet">
+                <h1>New pet</h1>
+                <form action="#" class="form-container">
+
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Pet's name" name="name" required>
+                    </div>
+
+                            <div>
+                                <label for="psw">Description</label>
+                                <input type="text" placeholder="Enter a brief description of your friend" name="desc">
+                            </div>
+                    <div>
+                        <label for="customer_pic">Picture:</label>
+                        <input type="file" id="customer_pic" name="picture">
+                    </div>
+                                <div>
+                                    <button type="submit" class="btn">Create</button>
+                                    <button type="button" class="btn cancel">Cancel</button>
+                                </div>
+                </form>
+            </div>
+        </a>
+
+        <a class="catalog_link" href="pet_details.html">
+            <div id="uActSect_petlisting">
+                <p>Your pets</p>
+            </div>
+        </a>
+
+    </div>
+    <hr/>
+    <!-- Edit your contact info-->
+    <a class="catalog_link" href="user_action_changeinfo.html">
+        <div id="uActSect-editContact">
+            <img src="img/neopets-pngs-1.png" alt="dog holding shopping cart">
+            <p>Change your contact info</p>
+        </div>
+    </a>
+
+
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <section>
+        <h2><b>Neopetwo</b></h2>
+        <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
+            care and love your best friend in the world!</p>
+        <a href="#">
+            <button class="btn">Learn more!</button>
+        </a>
+
+    </section>
+    <section>
+        <h2>Visit us!</h2>
+        <div class="line">
+            <p>
+            <h3>Address</h3> 2544 São Carlos Avenue &bull; São Carlos, SP
+            </p>
+        </div>
+        <div class="line">
+            <p>
+            <h3>Phone</h3> (16) 0000-0000
+            </p>
+        </div>
+        <div class="line">
+            <p>
+            <h3>Email</h3> sac-neopetwo@neopetwo.com
+            </p>
+        </div>
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter alt"><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-facebook alt"><span class="label"></span></a></li>
+            <li><a href="#" class="icon brands fa-instagram alt"><span class="label"></span></a></li>
+        </ul>
+    </section>
+</footer>
+</body>
+
+</html>

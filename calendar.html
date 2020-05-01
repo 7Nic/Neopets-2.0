@@ -2,11 +2,10 @@
 <html>
 
 <head>
-    <title>Home</title>
+    <title>Schedule</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/nav_footer.css" />
-    <link rel="stylesheet" href="assets/css/style_index.css" />
     <link rel="stylesheet" href="assets/css/style-calendar.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -16,154 +15,251 @@
     <!-- Nav -->
     <nav id="home-bar">
         <a href="./index.html"><img src="./img/logo2.png"></a>
-
         <ul>
-            <li><a href="user_action.html">My Account</a></li>
-            <li><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
-            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            <li><a href="user_action.html">Action Page</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="pet_details.html">Your Animal</a></li>
         </ul>
+
+
+        <div id="login-area">
+            <a href="login.html"><i class="fas fa-lock"></i> Login</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+        </div>
     </nav>
 
+
     <!-- Calendar -->
-    <div class="row center">
-        <div id="calendar-card" class="card">
-            <div class="month">
-                <ul>
-                    <li class="prev"><button>&#10094</button></li>
-                    <li class="next"><button>&#10095</button></li>
-                    <li>
-                        <h2>August<br>2017</h2>
-                    </li>
-                </ul>
-            </div>
+    <div class="column">
 
-
-            <!-- <table id="calendar">
-                <tr class="weekdays">
-                    <td>Mo</td>
-                    <td>Tu</td>
-                    <td>We</td>
-                    <td>Th</td>
-                    <td>Fr</td>
-                    <td>Sa</td>
-                    <td>Su</td>
-                </tr>
-                <tr class="week">
-                    <td><button>&nbsp;1</button></td>
-                    <td><button>&nbsp;2</button></td>
-                    <td><button>&nbsp;3</button></td>
-                    <td><button>&nbsp;4</button></td>
-                    <td><button>&nbsp;5</button></td>
-                    <td><button>&nbsp;6</button></td>
-                    <td><button>&nbsp;7</button></td>
-                </tr>
-                <tr class="week">
-                    <td><button>&nbsp;8</button></td>
-                    <td><button>&nbsp;9</button></td>
-                    <td><button><span class="active">10</span></button></td>
-                    <td><button>11</button></td>
-                    <td><button>12</button></td>
-                    <td><button>13</button></td>
-                    <td><button>14</button></td>
-                </tr>
-                <tr class="week">
-                    <td><button>15</button></td>
-                    <td><button>16</button></td>
-                    <td><button>17</button></td>
-                    <td><button>18</button></td>
-                    <td><button>19</button></td>
-                    <td><button>20</button></td>
-                    <td><button>21</button></td>
-                </tr>
-                <tr class="week">
-                    <td><button>22</button></td>
-                    <td><button>23</button></td>
-                    <td><button>24</button></td>
-                    <td><button>25</button></td>
-                    <td><button>26</button></td>
-                    <td><button>27</button></td>
-                    <td><button>28</button></td>
-                </tr>
-                <tr class="week">
-                    <td><button>29</button></td>
-                    <td><button>30</button></td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-        </div> -->
+        <div class="banner bg-green row" id="input-bar">
+            <select class="box">
+                <option>Serviços</option>
+                <option>Haircut</option>
+                <option>Bathing</option>
+                <option>Veterinary appointment</option>
+            </select>
+            <h2 >Agendar Serviço</h2>
+            <input type="date" class = "box"/>
         </div>
 
-        <div id="time-card" class="card">
 
-            <h2>Dia X de Agosto</h2>
-            <div id="time-list">
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">10:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">11:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">12:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">13:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">14:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">15:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">16:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">17:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">18:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
-                <table class="hour-card">
-                    <tr>
-                        <td class="hour">19:00</td>
-                        <td class="description"><button>activity descrition</button></td>
-                    </tr>
-                </table>
+        
+        <div  class="banner bg-white" id="activities-list">
+            <h2>Horarios vagos</h2>
+            <br> 
+            <!-- trocar para o flow -->
+            <div class="activity-card row bg-darker">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-darker">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
+            </div>
+            <div class="activity-card row bg-ligther">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-ligther">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
+            </div>
+            <div class="activity-card row bg-darker">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-darker">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
+            </div>
+            <div class="activity-card row bg-ligther">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-ligther">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
+            </div>
+            <div class="activity-card row bg-darker">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-darker">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
+            </div>
+            <div class="activity-card row bg-ligther">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-ligther">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
+            </div>
+            <div class="activity-card row bg-darker">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-darker">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
+            </div>
+            <div class="activity-card row bg-ligther">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-ligther">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
+            </div><div class="activity-card row bg-darker">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-darker">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
+            </div>
+            <div class="activity-card row bg-ligther">
+                <div class="hour-section">Horario:<br> <span class = "hour-text">10:00 - 11:00</span></div>
+                <form class="info row">
+                    <div class = "column">
+                        <p class= "service-name">Type:<b> Bathing</b></p>
+                        <select class = "select-pet bg-ligther">
+                            <option><b>Select your pet</b></option>
+                            <option>My_pet 1</option> 
+                            <option>My_pet 2</option> 
+                            <option>My_pet 3</option> 
+                            <option>My_pet 4</option> 
+                        </select>
+                    </div>
+                    <p class="description">
+                        <b>Description:</b><br/>
+                        Full Bath in your pet. Includes gentle shampoo, blow-dry, ear cleaning, gland expression, 15-minute brushout, scented spritz and nail trim.
+                    </p>
+                    <input class="schedule-button" type="submit" value="Schedule"/>
+                </form>
             </div>
         </div>
     </div>
+    
+    <!-- Footer -->
+    <footer>
+        <section>
+            <h2><b>Neopetwo</b></h2>
+            <p>As pet lovers ourselves, we propose a modern way of remotely checking out everything you might need to
+                care and love your best friend in the world!</p>
+            <a href="#">
+                <button class="btn">Learn more!</button>
+            </a>
 
   <!-- Footer -->
 	<footer>

@@ -48,15 +48,16 @@ a {
 /* ######################################################################################### */
 
 .banner {
-	
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
 
 
 /* ############################################################################################################################3 */
+/* #EEBF47 */
 #home-bar{
-    background-color: #004445;
+    /* background-color: #004445; */
+    background-color: rgb(58, 104, 255);
     color: #FFF;
     display: flex;
     flex-direction: row;
@@ -64,14 +65,13 @@ a {
 }
 
 #home-bar img {
-    height: 100px;
+    height: 80px;
     width: auto;
-    margin-left: 2%;
+    margin-left: 6%;
 }
 
 #home-bar a {
     font-size: 20px;
-    font-weight: bold;
     color: #FFF;
     padding: 6px 12px;
     /* display: inline-block; */
@@ -85,7 +85,8 @@ a {
 }
 
 #home-bar ul .active a {
-    background-color: #6FB98F;
+    /* background-color: #6FB98F; */
+    color: #EEBF47;
     border-radius: 10px;
 }
 
@@ -94,8 +95,17 @@ a {
 }
 
 #home-bar li a:hover {
-    background-color: #6FB98F;
+    /* background-color: #6FB98F; */
+    color: #EEBF47;
     border-radius: 10px;
+}
+
+#home-bar ul #cart {
+    float: right;
+}
+
+#home-bar ul .fa-shopping-cart {
+    margin-right: 10px;
 }
 
 #login-area{

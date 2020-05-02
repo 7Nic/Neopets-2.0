@@ -69,15 +69,6 @@ a {
 	margin-bottom: 4px;
 }	
 
-.paymentArea input#zip-code {
-	width: 100%;
-  padding: 7.5px 6px;
-  margin-top: 3px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
 .rating {
   unicode-bidi: bidi-override;

@@ -31,15 +31,22 @@
 			<h2>Create your account and start using the platform</h2>
 			<section>
 				<h3>Name</h3>
-				<input type="email" placeholder="Type here your name" name="">	
+				<input type="text" placeholder="Type here your name" name="">	
 			</section>
 			<section>
 				<h3>Username</h3>
-				<input type="email" placeholder="Type here your username" name="">								
+				<input type="text" placeholder="Type here your username" name="">								
+			</section>
+			<section class ="inputfile">
+				<h3>Profile picture</h3>
+				<input type="file" name = "file" id ="file"  >
+				<label for="file" class= "btn" id = "file-btn">Choose a profile picture</label>
+				<br/>
+				<img src="img/profile-pic.png"/>
 			</section>
 			<section>
 				<h3>Phone</h3>
-				<input type="email" placeholder="Type here your phone number" name="">								
+				<input type="tel" placeholder="Type here your phone number" name="">								
 			</section>
 			<section>
 				<h3>Email</h3>
@@ -54,8 +61,10 @@
 				<h3>Confirm your password</h3>
 				<input type="password" placeholder="Confirm your password" name="">
 			</section>
+
+			
 			<section>
-				<button class="btn">Sign up</button>
+				<button class="btn" >Sign up</button>
 			</section>
 		</form>
 	</div>

@@ -84,6 +84,37 @@ a {
   	transition: background-color 200ms ease;
 }
 
+.inputfile {
+
+
+}
+
+.inputfile input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+
+
+.btn#file-btn{
+	margin-top: 2px;
+	padding: 8px;
+	width: 40%;
+	margin-bottom: 20px;
+}
+
+.inputfile img{
+	width: 100px;
+	height: 100px;
+	margin-left: 40%;
+	border-radius: 50%;
+}
+
+
 /*Navbar*/
 /*Another file*/
 

@@ -1,9 +1,5 @@
 # Neopetwo
 
-- Modelos que podemos seguir para a HomePage:
-- As cores desse: https://campcloon.com/
-- O banner desse: https://theme475-pet-shop.myshopify.com/
-- As seções do meio da página desse: https://theme538-pets-shop.myshopify.com/
-- As seções do meio da página desse também:https://www.zeedog.com/
-
-- Fotos grátis de cães :) https://www.freepngs.com/dog-pngs
+- Daniel da Rocha Fróes 10255956
+- Gabriel Santos Nicolau 10684600
+- Kaio Tadeu Rodrigues 7561083

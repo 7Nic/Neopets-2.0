@@ -1,8 +1,12 @@
+<!--Petshopt Mockup - First delivery-->
+<!--Daniel da Rocha Fróes 10255956-->
+<!--Gabriel Santos Nicolau 10684600-->
+<!--Kaio Tadeu Rodrigues 7561083-->
 <!DOCTYPE HTML>
 <html>
 
 <head>
-	<title>Home</title>
+	<title>Register</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/nav_footer.css" />
@@ -13,16 +17,16 @@
 				
 
 <body class="container">
-	<!-- Nav -->
-	<nav id="home-bar">
-		<a href="./index.html"><img src="./img/logo2.png"></a>
-
-		<ul>
-			<li class="active"><a href="user_action.html">My Account</a></li>
+<!-- Nav -->
+<nav id="home-bar">
+	<a id="logo" href="./index.html"><img src="./img/logo2.png"></a>
+	<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="user_action.html">My Account</a></li>
 			<li><a href="login.html"><i class="fas fa-lock"></i> Login</a></li>
-			<li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-		</ul>
-	</nav>
+			<li id="cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i> 0</a></li>
+	</ul>
+</nav>
 
 	<!-- Sign up -->
 	<div class="registerArea">
@@ -43,6 +47,10 @@
 				<label for="file" class= "btn" id = "file-btn">Choose a profile picture</label>
 				<br/>
 				<img src="img/profile-pic.png"/>
+			</section>
+			<section>
+				<h3>Picture</h3>
+				<input type="file" id="services_pic" name="picture">
 			</section>
 			<section>
 				<h3>Phone</h3>
